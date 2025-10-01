@@ -6,8 +6,8 @@
     <title>Fotoalbum "Berlin" – Andreas Böhm</title>
 </head>
 <body>
-    <nav>
-        <a href="/index.html"><img src="" alt="Andreas Böhm Logo"></a>
+    <nav aria-label="Hauptnavigation">
+        <a href="/index.html"><img src="" alt="Andreas Böhm – Zur Startseite"></a>
         <ul>
             <li><a href="/ux-design.html">User Experience Design</a></li>
             <li><a href="/fotografie.html">Fotografie</a></li>
@@ -19,35 +19,42 @@
         </ul>
     </nav>
     <header>
-        <picture>
-            <source srcset="/images/alben/berlin/berlin_banner_640x752.jpg 1x, /images/alben/berlin/berlin_banner_640x752@2x.jpg 2x" media="(max-width:640px)">
-            <source srcset="/images/alben/berlin/berlin_banner_1280x752.jpg 1x, /images/alben/berlin/berlin_banner_1280x752@2x.jpg 2x" media="(max-width:1280px)">
-            <source srcset="/images/alben/berlin/berlin_banner_1920x752.jpg 1x, /images/alben/berlin/berlin_banner_1920x752@2x.jpg 2x" media="(min-width:1281px)">
-            <img src="/images/alben/berlin/berlin_banner_1280x752.jpg" alt="Der farbenfrohe Eingang zur U-Bahn-Station Bundestag vor einem modernen Bürogebäude.">
-        </picture>
-        <a href="/fotografie.html"><img src="" alt="Zurück-Icon"> Alle Alben</a>
-        <hgroup>
-            <h1>Berlin</h1>
-            <p>Deutschland, September 2025</p>
-        </hgroup>
     </header>
     <main>
-        <div>
+        <section aria-labelledby="berlin-title">
+            
+            <picture>
+                <source srcset="/images/alben/berlin/berlin_banner_640x752.jpg 1x, /images/alben/berlin/berlin_banner_640x752@2x.jpg 2x" media="(max-width:640px)">
+                <source srcset="/images/alben/berlin/berlin_banner_1280x752.jpg 1x, /images/alben/berlin/berlin_banner_1280x752@2x.jpg 2x" media="(max-width:1280px)">
+                <source srcset="/images/alben/berlin/berlin_banner_1920x752.jpg 1x, /images/alben/berlin/berlin_banner_1920x752@2x.jpg 2x" media="(min-width:1281px)">
+                <img src="/images/alben/berlin/berlin_banner_1280x752.jpg" alt="Der farbenfrohe Eingang zur U-Bahn-Station Bundestag vor einem modernen Bürogebäude.">
+            </picture>
+            
+            <a href="/fotografie.html"><img src="pfad/zum/icon.svg" alt=""> Alle Alben</a>
+            
+            <h1 id="berlin-title">Berlin</h1>
+            <p>Deutschland, September 2025</p>
             <p><strong>Berlin hat immer einen speziellen Platz in meinem Herzen.</strong> Bei meinem ersten Besuch im Sommer 2023 war ich gefasst von der Vielfalt und Lebendigkeit der Stadt, die nie ruht. Dieser Besuch hier galt allerdings dem Besuch der 101. Internationalen Funkausstellung – auch wenn noch etwas Zeit für die Stadt selbst übrig war.</p>
-        </div>
-        <div>
+        </section>
+
+        <section aria-labelledby="berlin-photos">
+            <h2 id="berlin-photos">Bilder</h2>
+
             <figure>
                 <img src="/images/alben/berlin/berlin_bild-1_640x960.jpg" srcset="/images/alben/berlin/berlin_bild-1_640x960.jpg 1x, /images/alben/berlin/berlin_bild-1_640x960@2x.jpg 2x" alt="Ein Mann spielt in einem Netzgehege auf einer Messe Tennis gegen eine Ballmaschine.">
                 <figcaption>Spiel mit einem Tennisroboter.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/berlin/berlin_bild-2_640x960.jpg" srcset="/images/alben/berlin/berlin_bild-2_640x960.jpg 1x, /images/alben/berlin/berlin_bild-2_640x960@2x.jpg 2x" alt="Ein großer, aufblasbarer, blauer Teddybär der Marke Bosch sitzt in einer Messehalle.">
                 <figcaption>Bärenstarke Begrüßung bei Bosch.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/berlin/berlin_bild-3_1312x874.jpg" srcset="/images/alben/berlin/berlin_bild-3_1312x874.jpg 1x, /images/alben/berlin/berlin_bild-3_1312x874@2x.jpg 2x" alt="Eine silberne Sigma-Kompaktkamera liegt auf einem hellen Tresen in einer Vitrine.">
                 <figcaption>Die SIGMA BF ist eine radikal andere Kamera.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/berlin/berlin_bild-4_640x960.jpg" srcset="/images/alben/berlin/berlin_bild-4_640x960.jpg 1x, /images/alben/berlin/berlin_bild-4_640x960@2x.jpg 2x" alt="Besucher auf einem großen Samsung-Messestand mit leuchtenden, geschwungenen Bildschirmen.">
                 <figcaption>Die Messehalle von Samsung war für mich am meisten beeindruckend.</figcaption>
@@ -56,23 +63,28 @@
                 <img src="/images/alben/berlin/berlin_bild-5_640x960.jpg" srcset="/images/alben/berlin/berlin_bild-5_640x960.jpg 1x, /images/alben/berlin/berlin_bild-5_640x960@2x.jpg 2x" alt="Der Berliner Dom bei blauem Himmel mit modernen, rosa Sitzbänken auf dem Vorplatz.">
                 <figcaption>Der Dom zeigte sich bei herrlichem Sommerwetter von seiner besten Seite.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/berlin/berlin_bild-6_640x960.jpg" srcset="/images/alben/berlin/berlin_bild-6_640x960.jpg 1x, /images/alben/berlin/berlin_bild-6_640x960@2x.jpg 2x" alt="Menschen gehen durch einen gepflasterten Innenhof auf eine historische Fassade zu.">
                 <figcaption>Berlin Mitte hat fantastische Architektur zu bieten.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/berlin/berlin_bild-7_640x960.jpg" srcset="/images/alben/berlin/berlin_bild-7_640x960.jpg 1x, /images/alben/berlin/berlin_bild-7_640x960@2x.jpg 2x" alt="Eine wehende Deutschlandflagge auf dem Dach des Reichstagsgebäudes neben der Glaskuppel.">
                 <figcaption>Strahlend blauer Himmel auf dem Dach des Bundestags.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/berlin/berlin_bild-8_1312x874.jpg" srcset="/images/alben/berlin/berlin_bild-8_1312x874.jpg 1x, /images/alben/berlin/berlin_bild-8_1312x874@2x.jpg 2x" alt="Die große Glaskuppel des Berliner Reichstagsgebäudes von außen gegen einen blauen Himmel.">
                 <figcaption>Die gesamte Kuppel in einem Bild.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/berlin/berlin_bild-9_640x960.jpg" srcset="/images/alben/berlin/berlin_bild-9_640x960.jpg 1x, /images/alben/berlin/berlin_bild-9_640x960@2x.jpg 2x" alt="Zwei Besucher gehen auf der Rampe innerhalb der gläsernen Kuppel des Reichstagsgebäudes.">
                 <figcaption>Wir waren früh da, es war wenig los.</figcaption>
             </figure>
-        </div>
+
+        </section>
     </main>
     <footer>
         <ul>

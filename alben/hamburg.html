@@ -6,8 +6,8 @@
     <title>Fotoalbum "Hamburg" – Andreas Böhm</title>
 </head>
 <body>
-    <nav>
-        <a href="/index.html"><img src="" alt="Andreas Böhm Logo"></a>
+    <nav aria-label="Hauptnavigation">
+        <a href="/index.html"><img src="" alt="Andreas Böhm – Zur Startseite"></a>
         <ul>
             <li><a href="/ux-design.html">User Experience Design</a></li>
             <li><a href="/fotografie.html">Fotografie</a></li>
@@ -18,57 +18,67 @@
             <li><a href=""><img src="" target="_blank" alt="LinkedIn-Account aufrufen"></a></li>
         </ul>
     </nav>
-    <header>
-        <picture>
-            <source srcset="/images/alben/hamburg/hamburg_banner_640x752.jpg 1x, /images/alben/hamburg/hamburg_banner_640x752@2x.jpg 2x" media="(max-width:640px)">
-            <source srcset="/images/alben/hamburg/hamburg_banner_1280x752.jpg 1x, /images/alben/hamburg/hamburg_banner_1280x752@2x.jpg 2x" media="(max-width:1280px)">
-            <source srcset="/images/alben/hamburg/hamburg_banner_1920x752.jpg 1x, /images/alben/hamburg/hamburg_banner_1920x752@2x.jpg 2x" media="(min-width:1281px)">
-            <img src="/images/alben/hamburg/hamburg_banner_1280x752.jpg" alt="Besucher stehen auf der Aussichtsplattform der Elbphilharmonie, die den Backsteinsockel von der Glasfassade trennt.">
-        </picture>
-        <a href="/fotografie.html"><img src="" alt="Zurück-Icon"> Alle Alben</a>
-        <hgroup>
-            <h1>Hamburg</h1>
-            <p>Deutschland, November 2024</p>
-        </hgroup>
-    </header>
     <main>
-        <div>
+        <section aria-labelledby="hamburg-title">
+
+            <picture>
+                <source srcset="/images/alben/hamburg/hamburg_banner_640x752.jpg 1x, /images/alben/hamburg/hamburg_banner_640x752@2x.jpg 2x" media="(max-width:640px)">
+                <source srcset="/images/alben/hamburg/hamburg_banner_1280x752.jpg 1x, /images/alben/hamburg/hamburg_banner_1280x752@2x.jpg 2x" media="(max-width:1280px)">
+                <source srcset="/images/alben/hamburg/hamburg_banner_1920x752.jpg 1x, /images/alben/hamburg/hamburg_banner_1920x752@2x.jpg 2x" media="(min-width:1281px)">
+                <img src="/images/alben/hamburg/hamburg_banner_1280x752.jpg" alt="Besucher stehen auf der Aussichtsplattform der Elbphilharmonie, die den Backsteinsockel von der Glasfassade trennt.">
+            </picture>
+
+            <a href="/fotografie.html"><img src="" alt=""> Alle Alben</a>
+
+            <h1 id="hamburg-title">Hamburg</h1>
+            <p>Deutschland, November 2024</p>
             <p><strong>Ich war schon öfter in Hamburg. Interessanterweise aber nie bei gutem Wetter.</strong> Dieses Mal war es zwar kalt, aber wir hatten keinen Regen – und das im November. Zu meinen Favoriten zählt vor allem die Speicherstadt. Und das Miniaturwunderland darf natürlich bei keinem Hamburg-Besuch fehlen.</p>
-        </div>
-        <div>
+        </section>
+
+        <section aria-labelledby="hamburg-photos">
+            <h2 id="hamburg-photos">Bilder</h2>
+
             <figure>
                 <img src="/images/alben/hamburg/hamburg_bild-1_640x960.jpg" srcset="/images/alben/hamburg/hamburg_bild-1_640x960.jpg 1x, /images/alben/hamburg/hamburg_bild-1_640x960@2x.jpg 2x" alt="Eine Hafenrundfahrt-Barkasse fährt auf einem Fleet durch die Speicherstadt mit der Elbphilharmonie im Hintergrund.">
                 <figcaption>Blick auf die Elbphilharmonie.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/hamburg/hamburg_bild-2_640x960.jpg" srcset="/images/alben/hamburg/hamburg_bild-2_640x960.jpg 1x, /images/alben/hamburg/hamburg_bild-2_640x960@2x.jpg 2x" alt="Menschen stehen vor dem Eingang des Restaurants 'Schönes Leben' in einem Backsteingebäude der Speicherstadt.">
                 <figcaption>Schönes Leben in Hamburg./figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/hamburg/hamburg_bild-3_640x960.jpg" srcset="/images/alben/hamburg/hamburg_bild-3_640x960.jpg 1x, /images/alben/hamburg/hamburg_bild-3_640x960@2x.jpg 2x" alt="Ein roter Sightseeing-Bus fährt an einem sonnenbeschienenen Backstein-Speichergebäude in Hamburg vorbei.">
                 <figcaption>Die Speicherstadt wird von roter Farbe geprägt.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/hamburg/hamburg_bild-4_640x960.jpg" srcset="/images/alben/hamburg/hamburg_bild-4_640x960.jpg 1x, /images/alben/hamburg/hamburg_bild-4_640x960@2x.jpg 2x" alt="Die Fensterfront eines modernen Gebäudes an den Landungsbrücken reflektiert den orangefarbenen Sonnenuntergang.">
                 <figcaption>Die Landungsbrücken glänzen in den Abendstunden.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/hamburg/hamburg_bild-5_640x960.jpg" srcset="/images/alben/hamburg/hamburg_bild-5_640x960.jpg 1x, /images/alben/hamburg/hamburg_bild-5_640x960@2x.jpg 2x" alt="Die Elbphilharmonie und ein weißes Museumsschiff im Hamburger Hafen bei Dämmerung.">
                 <figcaption>Auch die Elbphilharmonie strahlt bei Sonnenuntergang.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/hamburg/hamburg_bild-6_1312x874.jpg" srcset="/images/alben/hamburg/hamburg_bild-6_1312x874.jpg 1x, /images/alben/hamburg/hamburg_bild-6_1312x874@2x.jpg 2x" alt="Ein silbernes Oldtimer-Modellauto fährt in einer Kurve in der Miniaturlandschaft des Miniatur Wunderlandes.">
                 <figcaption>Mittlerweile ist auch Monaco im Miniaturwunderland vertreten.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/hamburg/hamburg_bild-7_640x960.jpg" srcset="/images/alben/hamburg/hamburg_bild-7_640x960.jpg 1x, /images/alben/hamburg/hamburg_bild-7_640x960@2x.jpg 2x" alt="Eine detailreiche Modellbauszene mit einem blauen Auto und einem grünen LKW im Miniatur Wunderland.">
                 <figcaption>Der Brasilianische Abschnitt war bei meinem letzten Besuch auch noch nicht da.</figcaption>
             </figure>
+
             <figure>
                 <img src="/images/alben/hamburg/hamburg_bild-8_640x960.jpg" srcset="/images/alben/hamburg/hamburg_bild-8_640x960.jpg 1x, /images/alben/hamburg/hamburg_bild-8_640x960@2x.jpg 2x" alt="Eine Möwe sitzt im Hamburger Hafen, im unscharfen Hintergrund ist die Silhouette der Michaeliskirche zu sehen.">
                 <figcaption>Die Vögel haben in der Stadt sämtliche Scheu vor Menschen abgelegt.</figcaption>
             </figure>
-        </div>
+            
+        </section>
     </main>
     <footer>
         <ul>

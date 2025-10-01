@@ -6,8 +6,8 @@
     <title>Andreas Böhm – Portfolio</title>
 </head>
 <body>
-    <nav>
-        <a href="/index.html"><img src="" alt="Andreas Böhm Logo"></a>
+    <nav aria-label="Hauptnavigation">
+        <a href="/index.html"><img src="" alt="Andreas Böhm – Zur Startseite"></a>
         <ul>
             <li><a href="/ux-design.html">User Experience Design</a></li>
             <li><a href="/fotografie.html">Fotografie</a></li>
@@ -20,34 +20,38 @@
     </nav>
     <header>
         <img src="" alt="Headerbanner (Foto Zugspitze, Beschreibungstext noch anpassen)" srcset="">
-        <hgroup>
-            <h1>Andreas Böhm</h1>
-            <p>User Experience Designer, Street und Travel Photographer</p>
-        </hgroup>
+        <h1>Andreas Böhm</h1>
+        <p>User Experience Designer, Street und Travel Photographer</p>
     </header>
     <main>
-<!-- Hier sollte die Semantik auf jeden Fall nochmal geprüft werden. Platzhalterinhalte natürlich noch tauschen.-->
-        <div>
-            <h2>Hey!</h2>
+
+        <section aria-labelledby="hey-introduction">
+            <h2 id="hey-introduction">Hey!</h2>
             <p><strong>Ich bin ein User Experience Designer mit einer Mission: Echte Werbung.</strong> Gemeinsam mit meinem Team gestalte ich Marken, Applikationen und Plattformen, die nicht nur funktionieren, sondern begeistern. Ich glaube daran, dass die beste Botschaft einer Marke ein herausragendes Nutzererlebnis ist – intuitiv, klar und positiv im Gedächtnis bleibend.</p>
             <p>Dasselbe Auge für Authentizität und Komposition leitet mich, wenn ich nicht auf ein Whiteboard oder einen Bildschirm, sondern durch den Sucher meiner Kamera blicke. Als Reise- und Street-Fotograf fange ich die Welt ein, wie sie ist: ungeschönt, echt und voller kleiner Geschichten.</p>
             <p>Tauch ein in meine Design-Projekte, verliere dich in meinen Foto-Galerien oder finde heraus, wer hinter all dem steckt.</p>
-            <a href="/ueber-mich.html">Über mich</a>
-        </div>
-        <div>
-            <div>
-                <h3>User Experience Design</h3>
+            <a href="/ueber-mich.html" aria-label="Mehr über Andreas erfahren">Über mich</a>
+        </section>
+
+        <section aria-labelledby="arbeiten-introduction">
+            <h2 id="arbeiten-introduction">Meine Arbeiten</h2>
+
+            <article aria-labelledby="ux-design-introduction">
+                <h3 id="ux-design-introduction">User Experience Design</h3>
                 <p><strong>Werbung und User Experience, passt das überhaupt zusammen?</strong> Ich finde: Ja, unbedingt. Nämlich dann, wenn das Produkt selbst zur besten Werbung wird. Ich gestalte Erlebnisse, die so intuitiv und überzeugend sind, dass sie für sich selbst sprechen.</p>
                 <p>Entdecke Projekte, bei denen aus Konzept, Design und Testing stimmige Markenwelten entstanden sind.</p>
-                <a href="/ux-design.html">Arbeiten ansehen</a>
-            </div>
-            <div>
-                <h3>Fotografie</h3>
+                <a href="/ux-design.html" aria-label="Arbeiten im Bereich User Experience ansehen">Projekte ansehen</a>
+            </article>
+
+            <article aria-labelledby="photography-introduction">
+                <h3 id="photography-introduction">Fotografie</h3>
                 <p><strong>Zusammen mit meiner Kamera bin ich gerne unterwegs.</strong> Für mich ist Fotografie die Kunst des genauen Hinsehens. Auf den Straßen fremder Städte oder direkt vor der eigenen Haustür suche ich nach dem, was oft übersehen wird: die Geometrie des Alltags, ehrliche Blicke, unpolierte Augenblicke.</p>
-                <p>Sieh dir ie Welt durch meine Augen an.</p>
-                <a href="/fotografie.html">Fotoalben ansehen</a>
-            </div>
-        </div>
+                <p>Sieh dir die Welt durch meine Augen an.</p>
+                <a href="/fotografie.html" aria-label="Fotoalben mit Street und Travel Photography ansehen">Fotoalben ansehen</a>
+            </article>
+
+        </section>
+
     </main>
     <footer>
         <ul>
