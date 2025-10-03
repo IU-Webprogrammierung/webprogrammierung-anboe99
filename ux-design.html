@@ -19,12 +19,15 @@
             <li><a href="/ueber-mich.html"><img src="/icons/about.svg" alt="">Über mich</a></li>
         </ul>
     </nav>
-    <header>
-    </header>
     <main>
         <section aria-labelledby="ux-title">
 
-            <img src="" alt="Headerbanner (Foto wählen, Beschreibungstext noch anpassen)" srcset="">
+            <picture>
+                <source srcset="/images/ux-design/ux-design_banner_640x528.jpg 1x, /images/ux-design/ux-design_banner_640x528@2x.jpg 2x" media="(max-width:640px)">
+                <source srcset="/images/ux-design/ux-design_banner_1280x528.jpg 1x, /images/ux-design/ux-design_banner_1280x528@2x.jpg 2x" media="(max-width:1280px)">
+                <source srcset="/images/ux-design/ux-design_banner_1920x7528.jpg 1x, /images/ux-design/ux-design_banner_1920x528@2x.jpg 2x" media="(min-width:1281px)">
+                <img src="/images/ux-design/ux-design_banner_1280x528.jpg" alt="Ein Dashboard zur Überwachung eines Tunnels mit einer Video-Liveansicht auf einem Monitor.">
+            </picture>
 
             <p>Arbeiten</p>
             <h1 id="ux-title">User Experience Design</h1>
@@ -32,21 +35,65 @@
             <p>Hier sind einige der Projekte, in denen ich diesen Gedanken umsetzen durfte.</p>
         </section>
 
+<!-- Projects will be presented in a grid using a flexbox layout.-->
+
         <section aria-labelledby="ux-projects">
             <h2 id="ux-projects">Projekte</h2>
 
             <article aria-labelledby="project-title-c3">
                 <img srcset="/images/ux-design/ux-design_c3_416x640.jpg 1x, /images/ux-design/ux-design_c3_416x640@2x.jpg 2x" alt="Beschreibung einfügen."> 
                 <h3 id="project-title-c3">C3 marketing agentur</h3>
-                <p>C3 marketing agentur</p>
-                <a href="" target="_blank">Website ansehen<img src="/icons/external.svg" alt=""></a>
+                <p>Marketingagentur für Echte Werbung</p>
+                <a href="https://www.myc3.com" target="_blank">Website ansehen<img src="/icons/external.svg" alt=""></a>
             </article>
 
-            <article>
-                <img src="" alt="Bildbeschreibungstext" srcset="">
-                <h4>Website-Projekt ABC</h4>
-                <p>Kurzbeschreibung des Unternehmens und Projekts in wenigen Worten.</p>
-                <a href="" target="_blank">Website ansehen<img src="/icons/external.svg" alt=""></a>
+            <article aria-labelledby="project-title-ssv">
+                <img srcset="/images/ux-design/ux-design_ssv_416x640.jpg 1x, /images/ux-design/ux-design_ssv_416x640@2x.jpg 2x" alt="Beschreibung einfügen."> 
+                <h3 id="project-title-ssv">SSV Jahn Regensburg</h3>
+                <p>Verein, Fans, Ergebnisse</p>
+                <a href="https://www.ssv-jahn.de" target="_blank">Website ansehen<img src="/icons/external.svg" alt=""></a>
+            </article>
+
+            <article aria-labelledby="project-title-dbl">
+                <img srcset="/images/ux-design/ux-design_dbl_416x640.jpg 1x, /images/ux-design/ux-design_dbl_416x640@2x.jpg 2x" alt="Beschreibung einfügen."> 
+                <h3 id="project-title-dbl">Deutsche Baseball-Bundesliga</h3>
+                <p>Aufbau der 1. Baseball-Bundesliga</p>
+                <a href="https://www.baseball.de" target="_blank">Website ansehen<img src="/icons/external.svg" alt=""></a>
+            </article>
+
+            <article aria-labelledby="project-title-iteee">
+                <img srcset="/images/ux-design/ux-design_iteee_416x640.jpg 1x, /images/ux-design/ux-design_iteee_416x640@2x.jpg 2x" alt="Beschreibung einfügen."> 
+                <h3 id="project-title-iteee">iteee</h3>
+                <p>IT echt, einfach und effizient</p>
+                <a href="https://www.it-eee.de" target="_blank">Website ansehen<img src="/icons/external.svg" alt=""></a>
+            </article>
+
+            <article aria-labelledby="project-title-benkers">
+                <img srcset="/images/ux-design/ux-design_benkers_416x640.jpg 1x, /images/ux-design/ux-design_benkers_416x640@2x.jpg 2x" alt="Beschreibung einfügen."> 
+                <h3 id="project-title-benkers">benkers</h3>
+                <p>Genuss im Auenpark</p>
+                <a href="https://www.benkers-genuss.de" target="_blank">Website ansehen<img src="/icons/external.svg" alt=""></a>
+            </article>
+
+            <article aria-labelledby="project-title-lebenplus">
+                <img srcset="/images/ux-design/ux-design_lebenplus_416x640.jpg 1x, /images/ux-design/ux-design_lebenplus_416x640@2x.jpg 2x" alt="Beschreibung einfügen."> 
+                <h3 id="project-title-lebenplus">LEBENplus App</h3>
+                <p>Kommunaler Austausch und Leistungen</p>
+                <a href="https://app.meinlebenplus.de" target="_blank">App ansehen<img src="/icons/external.svg" alt=""></a>
+            </article>
+
+            <article aria-labelledby="project-title-krisch">
+                <img srcset="/images/ux-design/ux-design_krisch_416x640.jpg 1x, /images/ux-design/ux-design_krisch_416x640@2x.jpg 2x" alt="Beschreibung einfügen."> 
+                <h3 id="project-title-krisch">Krisch Energietechnik</h3>
+                <p>Kommunikative Neuausrichtung</p>
+                <a href="https://www.krisch-energietechnik.de" target="_blank">Website ansehen<img src="/icons/external.svg" alt=""></a>
+            </article>
+            
+            <article aria-labelledby="project-title-baxi">
+                <img srcset="/images/ux-design/ux-design_baxi_416x640.jpg 1x, /images/ux-design/ux-design_baxi_416x640@2x.jpg 2x" alt="Beschreibung einfügen."> 
+                <h3 id="project-title-baxi">BAXI App</h3>
+                <p>Mobilität im Landkreis Tirschenreuth</p>
+                <a href="https://app.fahrmit-baxi.de" target="_blank">App ansehen<img src="/icons/external.svg" alt=""></a>
             </article>
 
         </section>
