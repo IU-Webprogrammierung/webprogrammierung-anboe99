@@ -1,0 +1,72 @@
+/* Only rudimentary CSS for the first project phase */
+
+
+
+/* FONTS */
+
+@font-face {
+    font-family: font-primary;
+    src: url(../fonts/BastardoGrotesk-Regular.ttf);
+    font-weight:400;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: font-primary;
+    src: url(../fonts/BastardoGrotesk-Semibold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: font-primary;
+    src: url(../fonts/BastardoGrotesk-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: font-secondary;
+    src: url(../fonts/IBMPlexMono-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+
+/* VARIABLES */
+
+
+
+/* STYLES */
+
+body {
+    font-family: 'font-primary', sans-serif;
+    font-size: 16px;
+}
+
+
+
+/* TEXT STYLES */
+
+h1 {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+/* currentColor only works with svg paths within an html file, will have to change that for some icons... */
+
+a {
+    color:cadetblue;
+}
