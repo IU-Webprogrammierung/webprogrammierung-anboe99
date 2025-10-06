@@ -36,6 +36,17 @@
 
 /* VARIABLES */
 
+:root {
+    --primary-color: #000000;
+    --elevated-color: #1C1C1E;
+    --contour-color: #38383A;
+    --text-color-dark: #1C1C1E;
+    --text-color-light: #FFFFFF;
+    --text-color-medium: #8E8E93;
+    --accent-color: #FF375F;
+    --accent-color-shade: #E61C44;
+}
+
 
 
 /* STYLES */
@@ -43,6 +54,8 @@
 body {
     font-family: 'font-primary', sans-serif;
     font-size: 16px;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
 }
 
 
@@ -64,9 +77,78 @@ h3 {
     font-size: 1.5rem;
 }
 
+strong {
+    font-weight: 600;
+}
+
 
 /* currentColor only works with svg paths within an html file, will have to change that for some icons... */
 
-a {
-    color:cadetblue;
+
+
+/* Buttons */
+
+.button-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 100vw;
+    padding: calc(0.5*1rem) 1rem;
+
+    background-color: var(--accent-color);
+    color: var(--text-color-light);
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.button-primary:hover {
+    background-color: var(--accent-color-shade);
+}
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--elevated-color);
+    border: 1px solid var(--contour-color);
+    border-radius: 32px;
+
+    margin: 32px 16px;
+    padding: 32px 16px 36px 16px;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+footer ul:first-child li {
+    margin: 0 0.5rem;
+}
+
+footer ul:last-child li {
+    margin: 0 1rem;
+}
+
+footer a {
+    color: var(--text-color-medium);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+
 }
