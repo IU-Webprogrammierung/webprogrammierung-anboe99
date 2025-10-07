@@ -1,8 +1,9 @@
 /* Only rudimentary CSS for the first project phase */
 
 
-
+/* ======*/
 /* FONTS */
+/* ======*/
 
 @font-face {
     font-family: font-primary;
@@ -33,12 +34,14 @@
 }
 
 
-
+/* ==========*/
 /* VARIABLES */
+/* ==========*/
 
 :root {
     --primary-color: #000000;
     --elevated-color: #1C1C1E;
+    --elevated-color-shade: #111112;
     --contour-color: #38383A;
     --text-color-dark: #1C1C1E;
     --text-color-light: #FFFFFF;
@@ -48,8 +51,9 @@
 }
 
 
-
+/* =======*/
 /* STYLES */
+/* =======*/
 
 body {
     font-family: 'font-primary', sans-serif;
@@ -57,11 +61,13 @@ body {
     line-height: 1.5;
     background-color: var(--primary-color);
     color: var(--text-color-light);
+    padding: 0 16px;
 }
 
 
-
+/* =========== */
 /* TEXT STYLES */
+/* =========== */
 
 h1 {
     font-weight: 600;
@@ -92,8 +98,9 @@ strong {
 /* currentColor only works with svg paths within an html file, will have to change that for some icons... */
 
 
-
-/* Buttons */
+/* ======= */
+/* BUTTONS */
+/* ======= */
 
 .button-primary {
     display: inline-flex;
@@ -118,18 +125,20 @@ strong {
 }
 
 
-/* Footer */
+/* ====== */
+/* FOOTER */
+/* ====== */
 
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    background-color: var(--elevated-color);
+    background-image: linear-gradient(to bottom, var(--elevated-color) 0%, var(--elevated-color-shade) 100%);
     border: 1px solid var(--contour-color);
     border-radius: 32px;
 
-    margin: 32px 16px;
+    margin: 64px 0 32px 0;
     padding: 32px 16px 36px 16px;
 }
 
@@ -161,26 +170,28 @@ footer a:hover {
 }
 
 
-
-/* Cards Homepage */
+/* ============== */
+/* CARDS HOMEPAGE */
+/* ============== */
 
 .card-container {
     padding: 1rem 0;
 }
 
 .card-container article {
-    background-color: var(--elevated-color);
+    background-image: linear-gradient(to bottom, var(--elevated-color) 0%, var(--elevated-color-shade) 100%);
     border: 1px solid var(--contour-color);
     border-radius: 32px;
 
-    margin: 16px;
+    margin: 16px 0;
     padding: 32px;
 
     text-align: center;
 }
 
-
-/* Banners */
+/* ======= */
+/* BANNERS */
+/* ======= */
 
 .home-banner {
     position: relative;
