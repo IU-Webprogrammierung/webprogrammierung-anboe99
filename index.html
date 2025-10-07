@@ -22,14 +22,14 @@
         </ul>
     </nav>
     <header>
-
-        <picture>
-            <source srcset="images/home/home_banner_640x752.jpg 1x, images/home/home_banner_640x752@2x.jpg 2x" media="(max-width:640px)">
-            <source srcset="images/home/home_banner_1280x752.jpg 1x, images/home/home_banner_1280x752@2x.jpg 2x" media="(max-width:1280px)">
-            <source srcset="images/home/home_banner_1920x752.jpg 1x, images/home/home_banner_1920x752@2x.jpg 2x" media="(min-width:1281px)">
-            <img src="images/home/home_banner_1280x752.jpg" alt="Eine Benutzeroberfläche einer Software zur Verwaltung von Fahrradkomponenten wird auf einem Bildschirm gezeigt.">
-        </picture>
-
+        <div class="home-banner">
+            <picture>
+                <source srcset="images/home/home_banner_640x752.jpg 1x, images/home/home_banner_640x752@2x.jpg 2x" media="(max-width:640px)">
+                <source srcset="images/home/home_banner_1280x752.jpg 1x, images/home/home_banner_1280x752@2x.jpg 2x" media="(max-width:1280px)">
+                <source srcset="images/home/home_banner_1920x752.jpg 1x, images/home/home_banner_1920x752@2x.jpg 2x" media="(min-width:1281px)">
+                <img src="images/home/home_banner_1280x752.jpg" alt="Eine Benutzeroberfläche einer Software zur Verwaltung von Fahrradkomponenten wird auf einem Bildschirm gezeigt.">
+            </picture>
+        </div>
         <h1>Andreas Böhm</h1>
         <p>User Experience Designer, Street und Travel Photographer</p>
     </header>
@@ -44,7 +44,7 @@
             <a href="ueber-mich.html" class="button-primary" aria-label="Mehr über Andreas erfahren"><img src="icons/about.svg" alt="">Über mich</a>
         </section>
 
-        <section aria-labelledby="arbeiten-introduction">
+        <section class="card-container" aria-labelledby="arbeiten-introduction">
             <h2 id="arbeiten-introduction">Meine Arbeiten</h2>
 
             <article aria-labelledby="ux-design-introduction">
