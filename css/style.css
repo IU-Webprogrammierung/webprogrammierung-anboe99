@@ -204,12 +204,16 @@ nav > a:first-child:hover {
 }
 
 @media (min-width: 400px) {
+    nav {
+        font-size: 0.75rem;
+    }
+
     nav ul li + li {
-    margin-left: 0;
+        margin-left: 0;
     }
 
     nav ul li a {
-        width: 64px;
+        width: 72px;
     }
 }
 
