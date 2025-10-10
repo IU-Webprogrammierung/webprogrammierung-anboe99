@@ -124,6 +124,8 @@ p {
     cursor: pointer;
 
     transition: all 0.2s ease-in-out;
+
+    line-height: 1;
 }
 
 .button-primary:hover {
@@ -272,7 +274,7 @@ footer {
 
     background-image: linear-gradient(to bottom, var(--elevated-color) 0%, var(--elevated-color-shade) 100%);
     border: 1px solid var(--contour-color);
-    border-radius: 32px;
+    border-radius: 48px;
 
     margin: 64px 8px 32px 8px;
     padding: 32px 16px 36px 16px;
@@ -337,6 +339,75 @@ footer a:hover {
 
     text-align: center;
 }
+
+
+/*====================*/
+/* CARDS FOR PROJECTS */
+/*====================*/
+
+.photo-card {
+    position: relative;
+    border-radius: 48px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.photo-card img {
+    display: block;  
+    width: 100%;
+    height: auto;
+}
+
+.photo-card-content {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+
+    padding: 24px 16px 16px 16px;
+
+    background-image: linear-gradient(to right, rgba(28, 28, 30, 0.5) 0%, rgba(17, 17, 18, 0.8) 100%);
+    border: 1px solid var(--contour-color);
+    border-radius: 40px;
+}
+
+.photo-card-content h3 {
+    padding: 0;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.photo-card-content p {
+    margin: 0.5rem 0 1.5rem 0;
+    text-align: center;
+    text-wrap: balance;
+}
+
+
+.photo-card-content a {
+    margin: 0;
+    display: flex;
+}
+
+
+/*=======================*/
+/* GRID FOR PHOTO CARDS */
+/*=======================*/
+
+.photo-card-wall {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(344px, 1fr));
+    gap: 1rem;
+}
+
+@media (min-width: 1152px) {
+    .photo-card-wall {
+        gap: 2rem;
+    }
+}
+
+
+
 
 /*=========*/
 /* BANNERS */

@@ -58,65 +58,137 @@
 
 <!-- Projects will be presented in a grid using a flexbox layout.-->
 
-        <section aria-labelledby="ux-projects">
+        <section class="column-1-wide" aria-labelledby="ux-projects">
             <h2 id="ux-projects">Projekte</h2>
 
-            <article aria-labelledby="project-title-c3">
-                <img src="images/ux-design/ux-design_c3_416x640.jpg" srcset="images/ux-design/ux-design_c3_416x640.jpg 1x, images/ux-design/ux-design_c3_416x640@2x.jpg 2x" alt="Ein Werbebild mit dem Schriftzug 'echte Werbung' über dem Foto eines Mannes mit VR-Brille."> 
-                <h3 id="project-title-c3">C3 marketing agentur</h3>
-                <p>Marketingagentur für Echte Werbung</p>
-                <a href="https://www.myc3.com" target="_blank">Website ansehen<img src="icons/external.svg" alt=""></a>
-            </article>
+            <div class="photo-card-wall">
+                <article class="photo-card" aria-labelledby="project-title-c3">
+                    <img src="images/ux-design/ux-design_c3_416x640.jpg" srcset="images/ux-design/ux-design_c3_416x640.jpg 1x, images/ux-design/ux-design_c3_416x640@2x.jpg 2x" alt="Ein Werbebild mit dem Schriftzug 'echte Werbung' über dem Foto eines Mannes mit VR-Brille."> 
+                    <div class="photo-card-content">
+                        <h3 id="project-title-c3">C3 marketing agentur</h3>
+                        <p>Marketingagentur für Echte Werbung</p>
+                        <a class="button-primary" href="https://www.myc3.com" target="_blank">
+                            Website ansehen
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="external" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M13.2,3.3 C13.2,3.79875 13.60125,4.2 14.1,4.2 L18.52875,4.2 L9.86625,12.8625 C9.51375,13.215 9.51375,13.785 9.86625,14.13375 C10.21875,14.4825 10.78875,14.48625 11.1375,14.13375 L19.8,5.47125 L19.8,9.9 C19.8,10.39875 20.20125,10.8 20.7,10.8 C21.19875,10.8 21.6,10.39875 21.6,9.9 L21.6,3.3 C21.6,2.80125 21.19875,2.4 20.7,2.4 L14.1,2.4 C13.60125,2.4 13.2,2.80125 13.2,3.3 Z M5.4,6 C3.7425,6 2.4,7.3425 2.4,9 L2.4,18.6 C2.4,20.2575 3.7425,21.6 5.4,21.6 L15,21.6 C16.6575,21.6 18,20.2575 18,18.6 L18,15.3 C18,14.80125 17.59875,14.4 17.1,14.4 C16.60125,14.4 16.2,14.80125 16.2,15.3 L16.2,18.6 C16.2,19.26375 15.66375,19.8 15,19.8 L5.4,19.8 C4.73625,19.8 4.2,19.26375 4.2,18.6 L4.2,9 C4.2,8.33625 4.73625,7.8 5.4,7.8 L8.7,7.8 C9.19875,7.8 9.6,7.39875 9.6,6.9 C9.6,6.40125 9.19875,6 8.7,6 L5.4,6 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
 
-            <article aria-labelledby="project-title-ssv">
-                <img src="images/ux-design/ux-design_ssv_416x640.jpg" srcset="images/ux-design/ux-design_ssv_416x640.jpg 1x, images/ux-design/ux-design_ssv_416x640@2x.jpg 2x" alt="Die mobile Webseite des Fußballvereins Jahn Regensburg."> 
-                <h3 id="project-title-ssv">SSV Jahn Regensburg</h3>
-                <p>Verein, Fans, Ergebnisse</p>
-                <a href="https://www.ssv-jahn.de" target="_blank">Website ansehen<img src="icons/external.svg" alt=""></a>
-            </article>
+                <article class="photo-card" aria-labelledby="project-title-ssv">
+                    <img src="images/ux-design/ux-design_ssv_416x640.jpg" srcset="images/ux-design/ux-design_ssv_416x640.jpg 1x, images/ux-design/ux-design_ssv_416x640@2x.jpg 2x" alt="Die mobile Webseite des Fußballvereins Jahn Regensburg."> 
+                    <div class="photo-card-content">                   
+                        <h3 id="project-title-ssv">SSV Jahn Regensburg</h3>
+                        <p>Verein, Fans, Ergebnisse</p>
+                        <a class="button-primary" href="https://www.ssv-jahn.de" target="_blank">
+                            Website ansehen
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="external" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M13.2,3.3 C13.2,3.79875 13.60125,4.2 14.1,4.2 L18.52875,4.2 L9.86625,12.8625 C9.51375,13.215 9.51375,13.785 9.86625,14.13375 C10.21875,14.4825 10.78875,14.48625 11.1375,14.13375 L19.8,5.47125 L19.8,9.9 C19.8,10.39875 20.20125,10.8 20.7,10.8 C21.19875,10.8 21.6,10.39875 21.6,9.9 L21.6,3.3 C21.6,2.80125 21.19875,2.4 20.7,2.4 L14.1,2.4 C13.60125,2.4 13.2,2.80125 13.2,3.3 Z M5.4,6 C3.7425,6 2.4,7.3425 2.4,9 L2.4,18.6 C2.4,20.2575 3.7425,21.6 5.4,21.6 L15,21.6 C16.6575,21.6 18,20.2575 18,18.6 L18,15.3 C18,14.80125 17.59875,14.4 17.1,14.4 C16.60125,14.4 16.2,14.80125 16.2,15.3 L16.2,18.6 C16.2,19.26375 15.66375,19.8 15,19.8 L5.4,19.8 C4.73625,19.8 4.2,19.26375 4.2,18.6 L4.2,9 C4.2,8.33625 4.73625,7.8 5.4,7.8 L8.7,7.8 C9.19875,7.8 9.6,7.39875 9.6,6.9 C9.6,6.40125 9.19875,6 8.7,6 L5.4,6 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>                        
+                        </a>
+                    </div> 
+                </article>
 
-            <article aria-labelledby="project-title-dbl">
-                <img src="images/ux-design/ux-design_dbl_416x640.jpg" srcset="images/ux-design/ux-design_dbl_416x640.jpg 1x, images/ux-design/ux-design_dbl_416x640@2x.jpg 2x" alt="Die mobile Ansicht der Baseball Bundesliga Website mit einem Artikel über ein Spiel."> 
-                <h3 id="project-title-dbl">Deutsche Baseball-Bundesliga</h3>
-                <p>Aufbau der 1. Baseball-Bundesliga</p>
-                <a href="https://www.baseball.de" target="_blank">Website ansehen<img src="icons/external.svg" alt=""></a>
-            </article>
+                <article class="photo-card" aria-labelledby="project-title-dbl">
+                    <img src="images/ux-design/ux-design_dbl_416x640.jpg" srcset="images/ux-design/ux-design_dbl_416x640.jpg 1x, images/ux-design/ux-design_dbl_416x640@2x.jpg 2x" alt="Die mobile Ansicht der Baseball Bundesliga Website mit einem Artikel über ein Spiel."> 
+                    <div class="photo-card-content">
+                        <h3 id="project-title-dbl">Deutsche Baseball-Bundesliga</h3>
+                        <p>Aufbau der 1. Baseball-Bundesliga</p>
+                        <a class="button-primary" href="https://www.baseball.de" target="_blank">
+                            Website ansehen
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="external" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M13.2,3.3 C13.2,3.79875 13.60125,4.2 14.1,4.2 L18.52875,4.2 L9.86625,12.8625 C9.51375,13.215 9.51375,13.785 9.86625,14.13375 C10.21875,14.4825 10.78875,14.48625 11.1375,14.13375 L19.8,5.47125 L19.8,9.9 C19.8,10.39875 20.20125,10.8 20.7,10.8 C21.19875,10.8 21.6,10.39875 21.6,9.9 L21.6,3.3 C21.6,2.80125 21.19875,2.4 20.7,2.4 L14.1,2.4 C13.60125,2.4 13.2,2.80125 13.2,3.3 Z M5.4,6 C3.7425,6 2.4,7.3425 2.4,9 L2.4,18.6 C2.4,20.2575 3.7425,21.6 5.4,21.6 L15,21.6 C16.6575,21.6 18,20.2575 18,18.6 L18,15.3 C18,14.80125 17.59875,14.4 17.1,14.4 C16.60125,14.4 16.2,14.80125 16.2,15.3 L16.2,18.6 C16.2,19.26375 15.66375,19.8 15,19.8 L5.4,19.8 C4.73625,19.8 4.2,19.26375 4.2,18.6 L4.2,9 C4.2,8.33625 4.73625,7.8 5.4,7.8 L8.7,7.8 C9.19875,7.8 9.6,7.39875 9.6,6.9 C9.6,6.40125 9.19875,6 8.7,6 L5.4,6 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>                        
+                        </a>
+                    </div>
+                </article>
 
-            <article aria-labelledby="project-title-iteee">
-                <img src="images/ux-design/ux-design_iteee_416x640.jpg" srcset="images/ux-design/ux-design_iteee_416x640.jpg 1x, images/ux-design/ux-design_iteee_416x640@2x.jpg 2x" alt="Eine Grafik für eine IT-Firma mit dem Zitat 'IT-Probleme werden nicht von Technik, sondern von Menschen gelöst'.> 
-                <h3 id="project-title-iteee">iteee</h3>
-                <p>IT echt, einfach und effizient</p>
-                <a href="https://www.it-eee.de" target="_blank">Website ansehen<img src="icons/external.svg" alt=""></a>
-            </article>
+                <article class="photo-card" aria-labelledby="project-title-iteee">
+                    <img src="images/ux-design/ux-design_iteee_416x640.jpg" srcset="images/ux-design/ux-design_iteee_416x640.jpg 1x, images/ux-design/ux-design_iteee_416x640@2x.jpg 2x" alt="Eine Grafik für eine IT-Firma mit dem Zitat 'IT-Probleme werden nicht von Technik, sondern von Menschen gelöst'."> 
+                    <div class="photo-card-content">
+                        <h3 id="project-title-iteee">iteee</h3>
+                        <p>IT echt, einfach und effizient</p>
+                        <a class="button-primary" href="https://www.it-eee.de" target="_blank">
+                            Website ansehen
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="external" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M13.2,3.3 C13.2,3.79875 13.60125,4.2 14.1,4.2 L18.52875,4.2 L9.86625,12.8625 C9.51375,13.215 9.51375,13.785 9.86625,14.13375 C10.21875,14.4825 10.78875,14.48625 11.1375,14.13375 L19.8,5.47125 L19.8,9.9 C19.8,10.39875 20.20125,10.8 20.7,10.8 C21.19875,10.8 21.6,10.39875 21.6,9.9 L21.6,3.3 C21.6,2.80125 21.19875,2.4 20.7,2.4 L14.1,2.4 C13.60125,2.4 13.2,2.80125 13.2,3.3 Z M5.4,6 C3.7425,6 2.4,7.3425 2.4,9 L2.4,18.6 C2.4,20.2575 3.7425,21.6 5.4,21.6 L15,21.6 C16.6575,21.6 18,20.2575 18,18.6 L18,15.3 C18,14.80125 17.59875,14.4 17.1,14.4 C16.60125,14.4 16.2,14.80125 16.2,15.3 L16.2,18.6 C16.2,19.26375 15.66375,19.8 15,19.8 L5.4,19.8 C4.73625,19.8 4.2,19.26375 4.2,18.6 L4.2,9 C4.2,8.33625 4.73625,7.8 5.4,7.8 L8.7,7.8 C9.19875,7.8 9.6,7.39875 9.6,6.9 C9.6,6.40125 9.19875,6 8.7,6 L5.4,6 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>                        
+                        </a>
+                    </div>
+                </article>
 
-            <article aria-labelledby="project-title-benkers">
-                <img src="images/ux-design/ux-design_benkers_416x640.jpg" srcset="images/ux-design/ux-design_benkers_416x640.jpg 1x, images/ux-design/ux-design_benkers_416x640@2x.jpg 2x" alt="Die mobile Webseite des Restaurants 'benkers' mit einem Porträtfoto der beiden Inhabenden."> 
-                <h3 id="project-title-benkers">benkers</h3>
-                <p>Genuss im Auenpark</p>
-                <a href="https://www.benkers-genuss.de" target="_blank">Website ansehen<img src="icons/external.svg" alt=""></a>
-            </article>
+                <article class="photo-card" aria-labelledby="project-title-benkers">
+                    <img src="images/ux-design/ux-design_benkers_416x640.jpg" srcset="images/ux-design/ux-design_benkers_416x640.jpg 1x, images/ux-design/ux-design_benkers_416x640@2x.jpg 2x" alt="Die mobile Webseite des Restaurants 'benkers' mit einem Porträtfoto der beiden Inhabenden."> 
+                    <div class="photo-card-content">
+                        <h3 id="project-title-benkers">benkers</h3>
+                        <p>Genuss im Auenpark</p>
+                        <a class="button-primary" href="https://www.benkers-genuss.de" target="_blank">
+                            Website ansehen
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="external" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M13.2,3.3 C13.2,3.79875 13.60125,4.2 14.1,4.2 L18.52875,4.2 L9.86625,12.8625 C9.51375,13.215 9.51375,13.785 9.86625,14.13375 C10.21875,14.4825 10.78875,14.48625 11.1375,14.13375 L19.8,5.47125 L19.8,9.9 C19.8,10.39875 20.20125,10.8 20.7,10.8 C21.19875,10.8 21.6,10.39875 21.6,9.9 L21.6,3.3 C21.6,2.80125 21.19875,2.4 20.7,2.4 L14.1,2.4 C13.60125,2.4 13.2,2.80125 13.2,3.3 Z M5.4,6 C3.7425,6 2.4,7.3425 2.4,9 L2.4,18.6 C2.4,20.2575 3.7425,21.6 5.4,21.6 L15,21.6 C16.6575,21.6 18,20.2575 18,18.6 L18,15.3 C18,14.80125 17.59875,14.4 17.1,14.4 C16.60125,14.4 16.2,14.80125 16.2,15.3 L16.2,18.6 C16.2,19.26375 15.66375,19.8 15,19.8 L5.4,19.8 C4.73625,19.8 4.2,19.26375 4.2,18.6 L4.2,9 C4.2,8.33625 4.73625,7.8 5.4,7.8 L8.7,7.8 C9.19875,7.8 9.6,7.39875 9.6,6.9 C9.6,6.40125 9.19875,6 8.7,6 L5.4,6 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>                            
+                        </a>
+                    </div>
+                </article>
 
-            <article aria-labelledby="project-title-lebenplus">
-                <img src="images/ux-design/ux-design_lebenplus_416x640.jpg" srcset="images/ux-design/ux-design_lebenplus_416x640.jpg 1x, images/ux-design/ux-design_lebenplus_416x640@2x.jpg 2x" alt="Der Startbildschirm der App 'LEBENplus'."> 
-                <h3 id="project-title-lebenplus">LEBENplus App</h3>
-                <p>Kommunaler Austausch und Leistungen</p>
-                <a href="https://app.meinlebenplus.de" target="_blank">App ansehen<img src="icons/external.svg" alt=""></a>
-            </article>
+                <article class="photo-card" aria-labelledby="project-title-lebenplus">
+                    <img src="images/ux-design/ux-design_lebenplus_416x640.jpg" srcset="images/ux-design/ux-design_lebenplus_416x640.jpg 1x, images/ux-design/ux-design_lebenplus_416x640@2x.jpg 2x" alt="Der Startbildschirm der App 'LEBENplus'."> 
+                    <div class="photo-card-content">
+                        <h3 id="project-title-lebenplus">LEBENplus App</h3>
+                        <p>Kommunaler Austausch und Leistungen</p>
+                        <a class="button-primary" href="https://app.meinlebenplus.de" target="_blank">App ansehen
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="external" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M13.2,3.3 C13.2,3.79875 13.60125,4.2 14.1,4.2 L18.52875,4.2 L9.86625,12.8625 C9.51375,13.215 9.51375,13.785 9.86625,14.13375 C10.21875,14.4825 10.78875,14.48625 11.1375,14.13375 L19.8,5.47125 L19.8,9.9 C19.8,10.39875 20.20125,10.8 20.7,10.8 C21.19875,10.8 21.6,10.39875 21.6,9.9 L21.6,3.3 C21.6,2.80125 21.19875,2.4 20.7,2.4 L14.1,2.4 C13.60125,2.4 13.2,2.80125 13.2,3.3 Z M5.4,6 C3.7425,6 2.4,7.3425 2.4,9 L2.4,18.6 C2.4,20.2575 3.7425,21.6 5.4,21.6 L15,21.6 C16.6575,21.6 18,20.2575 18,18.6 L18,15.3 C18,14.80125 17.59875,14.4 17.1,14.4 C16.60125,14.4 16.2,14.80125 16.2,15.3 L16.2,18.6 C16.2,19.26375 15.66375,19.8 15,19.8 L5.4,19.8 C4.73625,19.8 4.2,19.26375 4.2,18.6 L4.2,9 C4.2,8.33625 4.73625,7.8 5.4,7.8 L8.7,7.8 C9.19875,7.8 9.6,7.39875 9.6,6.9 C9.6,6.40125 9.19875,6 8.7,6 L5.4,6 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
 
-            <article aria-labelledby="project-title-krisch">
-                <img src="images/ux-design/ux-design_krisch_416x640.jpg" srcset="images/ux-design/ux-design_krisch_416x640.jpg 1x, images/ux-design/ux-design_krisch_416x640@2x.jpg 2x" alt="Die mobile Webseite von KRISCH Energietechnik mit Informationen zu den Leistungen der Firma."> 
-                <h3 id="project-title-krisch">Krisch Energietechnik</h3>
-                <p>Kommunikative Neuausrichtung</p>
-                <a href="https://www.krisch-energietechnik.de" target="_blank">Website ansehen<img src="icons/external.svg" alt=""></a>
-            </article>
-            
-            <article aria-labelledby="project-title-baxi">
-                <img src="images/ux-design/ux-design_baxi_416x640.jpg" srcset="images/ux-design/ux-design_baxi_416x640.jpg 1x, images/ux-design/ux-design_baxi_416x640@2x.jpg 2x" alt="Der Startbildschirm der Mitfahr-App BAXI mit der Funktion 'Fahrt buchen'."> 
-                <h3 id="project-title-baxi">BAXI App</h3>
-                <p>Mobilität im Landkreis Tirschenreuth</p>
-                <a href="https://app.fahrmit-baxi.de" target="_blank">App ansehen<img src="icons/external.svg" alt=""></a>
-            </article>
-
+                <article class="photo-card" aria-labelledby="project-title-krisch">
+                    <img src="images/ux-design/ux-design_krisch_416x640.jpg" srcset="images/ux-design/ux-design_krisch_416x640.jpg 1x, images/ux-design/ux-design_krisch_416x640@2x.jpg 2x" alt="Die mobile Webseite von KRISCH Energietechnik mit Informationen zu den Leistungen der Firma."> 
+                    <div class="photo-card-content">
+                        <h3 id="project-title-krisch">Krisch Energietechnik</h3>
+                        <p>Kommunikative Neuausrichtung</p>
+                        <a class="button-primary" href="https://www.krisch-energietechnik.de" target="_blank">
+                            Website ansehen
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="external" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M13.2,3.3 C13.2,3.79875 13.60125,4.2 14.1,4.2 L18.52875,4.2 L9.86625,12.8625 C9.51375,13.215 9.51375,13.785 9.86625,14.13375 C10.21875,14.4825 10.78875,14.48625 11.1375,14.13375 L19.8,5.47125 L19.8,9.9 C19.8,10.39875 20.20125,10.8 20.7,10.8 C21.19875,10.8 21.6,10.39875 21.6,9.9 L21.6,3.3 C21.6,2.80125 21.19875,2.4 20.7,2.4 L14.1,2.4 C13.60125,2.4 13.2,2.80125 13.2,3.3 Z M5.4,6 C3.7425,6 2.4,7.3425 2.4,9 L2.4,18.6 C2.4,20.2575 3.7425,21.6 5.4,21.6 L15,21.6 C16.6575,21.6 18,20.2575 18,18.6 L18,15.3 C18,14.80125 17.59875,14.4 17.1,14.4 C16.60125,14.4 16.2,14.80125 16.2,15.3 L16.2,18.6 C16.2,19.26375 15.66375,19.8 15,19.8 L5.4,19.8 C4.73625,19.8 4.2,19.26375 4.2,18.6 L4.2,9 C4.2,8.33625 4.73625,7.8 5.4,7.8 L8.7,7.8 C9.19875,7.8 9.6,7.39875 9.6,6.9 C9.6,6.40125 9.19875,6 8.7,6 L5.4,6 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="photo-card" aria-labelledby="project-title-baxi">
+                    <img src="images/ux-design/ux-design_baxi_416x640.jpg" srcset="images/ux-design/ux-design_baxi_416x640.jpg 1x, images/ux-design/ux-design_baxi_416x640@2x.jpg 2x" alt="Der Startbildschirm der Mitfahr-App BAXI mit der Funktion 'Fahrt buchen'."> 
+                    <div class="photo-card-content">
+                        <h3 id="project-title-baxi">BAXI App</h3>
+                        <p>Mobilität im Landkreis Tirschenreuth</p>
+                        <a class="button-primary" href="https://app.fahrmit-baxi.de" target="_blank">
+                            App ansehen
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="external" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M13.2,3.3 C13.2,3.79875 13.60125,4.2 14.1,4.2 L18.52875,4.2 L9.86625,12.8625 C9.51375,13.215 9.51375,13.785 9.86625,14.13375 C10.21875,14.4825 10.78875,14.48625 11.1375,14.13375 L19.8,5.47125 L19.8,9.9 C19.8,10.39875 20.20125,10.8 20.7,10.8 C21.19875,10.8 21.6,10.39875 21.6,9.9 L21.6,3.3 C21.6,2.80125 21.19875,2.4 20.7,2.4 L14.1,2.4 C13.60125,2.4 13.2,2.80125 13.2,3.3 Z M5.4,6 C3.7425,6 2.4,7.3425 2.4,9 L2.4,18.6 C2.4,20.2575 3.7425,21.6 5.4,21.6 L15,21.6 C16.6575,21.6 18,20.2575 18,18.6 L18,15.3 C18,14.80125 17.59875,14.4 17.1,14.4 C16.60125,14.4 16.2,14.80125 16.2,15.3 L16.2,18.6 C16.2,19.26375 15.66375,19.8 15,19.8 L5.4,19.8 C4.73625,19.8 4.2,19.26375 4.2,18.6 L4.2,9 C4.2,8.33625 4.73625,7.8 5.4,7.8 L8.7,7.8 C9.19875,7.8 9.6,7.39875 9.6,6.9 C9.6,6.40125 9.19875,6 8.7,6 L5.4,6 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
     <footer>

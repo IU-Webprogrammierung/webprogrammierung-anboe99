@@ -50,64 +50,137 @@
 
 <!-- Albums will be presented in a grid using a flexbox layout.-->
 
-        <section aria-labelledby="photography-albums">
+        <section class="column-1-wide" aria-labelledby="photography-albums">
             <h2 id="photography-albums">Fotoalben</h2>
+            <div class="photo-card-wall">
+                <article class="photo-card" aria-labelledby="album-title-berlin">
+                    <img src="images/fotografie/fotografie_berlin_416x528.jpg" srcset="images/fotografie/fotografie_berlin_416x528.jpg 1x, images/fotografie/fotografie_berlin_416x528@2x.jpg 2x" alt="Der farbenfrohe U-Bahn-Eingang Bundestag steht vor einem modernen Bürogebäude in Berlin."> 
+                    <div class="photo-card-content">
+                        <h3 id="album-title-berlin">Berlin</h3>
+                        <p>Spätsommer und Besuch der IFA 101</p>
+                        <a class="button-primary" href="alben/berlin.html" aria-label="Album 'Berlin' ansehen">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="album" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M4.85714286,2 C3.28125,2 2,3.28125 2,4.85714286 L2,19.1428571 C2,20.71875 3.28125,22 4.85714286,22 L19.1428571,22 C20.71875,22 22,20.71875 22,19.1428571 L22,4.85714286 C22,3.28125 20.71875,2 19.1428571,2 L4.85714286,2 Z M7.71428571,5.57142857 C8.89732143,5.57142857 9.85714286,6.53125 9.85714286,7.71428571 C9.85714286,8.89732143 8.89732143,9.85714286 7.71428571,9.85714286 C6.53125,9.85714286 5.57142857,8.89732143 5.57142857,7.71428571 C5.57142857,6.53125 6.53125,5.57142857 7.71428571,5.57142857 Z M14.1428571,10.5714286 C14.5178571,10.5714286 14.8616071,10.7678571 15.0580357,11.0848214 L18.9866071,17.5133929 C19.1875,17.84375 19.1964286,18.2589286 19.0089286,18.5982143 C18.8214286,18.9375 18.4598214,19.1428571 18.0714286,19.1428571 L5.92857143,19.1428571 C5.53125,19.1428571 5.16071429,18.9196429 4.97767857,18.5669643 C4.79464286,18.2142857 4.82142857,17.7857143 5.04910714,17.4598214 L7.54910714,13.8883929 C7.75,13.6026786 8.07589286,13.4330357 8.42857143,13.4330357 C8.78125,13.4330357 9.10714286,13.6026786 9.30803571,13.8883929 L10.4866071,15.5758929 L13.2276786,11.0892857 C13.4241071,10.7723214 13.7678571,10.5758929 14.1428571,10.5758929 L14.1428571,10.5714286 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                            Album ansehen
+                        </a>
+                    </div>
+                </article>
 
-            <article aria-labelledby="album-title-berlin">
-                <img src="images/fotografie/fotografie_berlin_416x528.jpg" srcset="images/fotografie/fotografie_berlin_416x528.jpg 1x, images/fotografie/fotografie_berlin_416x528@2x.jpg 2x" alt="Der farbenfrohe U-Bahn-Eingang Bundestag steht vor einem modernen Bürogebäude in Berlin."> 
-                <h3 id="album-title-berlin">Berlin</h3>
-                <p>Spätsommer und Besuch der IFA 101</p>
-                <a href="alben/berlin.html" aria-label="Album 'Berlin' ansehen">Album ansehen<img src="icons/arrow-right.svg" alt=""></a>
-            </article>
+                <article class="photo-card" aria-labelledby="album-title-emilia-romagna">
+                    <img src="images/fotografie/fotografie_emilia-romagna_416x528.jpg" srcset="images/fotografie/fotografie_emilia-romagna_416x528.jpg 1x, images/fotografie/fotografie_emilia-romagna_416x528@2x.jpg 2x" alt="Eine enge Gasse in Italien mit dem Schild des Restaurants 'da Enzo' und bunten Regenschirmen."> 
+                    <div class="photo-card-content">
+                        <h3 id="album-title-emilia-romagna">Emilia-Romagna</h3>
+                        <p>Ein kurzer Ausflug nach Modena, Bologna und Verona</p>
+                        <a class="button-primary" href="alben/emilia-romagna.html" aria-label="Album 'Emilia-Romagna' ansehen">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="album" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M4.85714286,2 C3.28125,2 2,3.28125 2,4.85714286 L2,19.1428571 C2,20.71875 3.28125,22 4.85714286,22 L19.1428571,22 C20.71875,22 22,20.71875 22,19.1428571 L22,4.85714286 C22,3.28125 20.71875,2 19.1428571,2 L4.85714286,2 Z M7.71428571,5.57142857 C8.89732143,5.57142857 9.85714286,6.53125 9.85714286,7.71428571 C9.85714286,8.89732143 8.89732143,9.85714286 7.71428571,9.85714286 C6.53125,9.85714286 5.57142857,8.89732143 5.57142857,7.71428571 C5.57142857,6.53125 6.53125,5.57142857 7.71428571,5.57142857 Z M14.1428571,10.5714286 C14.5178571,10.5714286 14.8616071,10.7678571 15.0580357,11.0848214 L18.9866071,17.5133929 C19.1875,17.84375 19.1964286,18.2589286 19.0089286,18.5982143 C18.8214286,18.9375 18.4598214,19.1428571 18.0714286,19.1428571 L5.92857143,19.1428571 C5.53125,19.1428571 5.16071429,18.9196429 4.97767857,18.5669643 C4.79464286,18.2142857 4.82142857,17.7857143 5.04910714,17.4598214 L7.54910714,13.8883929 C7.75,13.6026786 8.07589286,13.4330357 8.42857143,13.4330357 C8.78125,13.4330357 9.10714286,13.6026786 9.30803571,13.8883929 L10.4866071,15.5758929 L13.2276786,11.0892857 C13.4241071,10.7723214 13.7678571,10.5758929 14.1428571,10.5758929 L14.1428571,10.5714286 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                            Album ansehen
+                        </a>
+                    </div>
+                </article>
 
-            <article aria-labelledby="album-title-emilia-romagna">
-                <img src="images/fotografie/fotografie_emilia-romagna_416x528.jpg" srcset="images/fotografie/fotografie_emilia-romagna_416x528.jpg 1x, images/fotografie/fotografie_emilia-romagna_416x528@2x.jpg 2x" alt="Eine enge Gasse in Italien mit dem Schild des Restaurants 'da Enzo' und bunten Regenschirmen."> 
-                <h3 id="album-title-emilia-romagna">Emilia-Romagna</h3>
-                <p>Ein kurzer Ausflug nach Modena, Bologna und Verona</p>
-                <a href="alben/emilia-romagna.html" aria-label="Album 'Emilia-Romagna' ansehen">Album ansehen<img src="icons/arrow-right.svg" alt=""></a>
-            </article>
+                <article class="photo-card" aria-labelledby="album-title-zugspitze">
+                    <img src="images/fotografie/fotografie_zugspitze_416x528.jpg" srcset="images/fotografie/fotografie_zugspitze_416x528.jpg 1x, images/fotografie/fotografie_zugspitze_416x528@2x.jpg 2x" alt="Das bayerische Alpendorf Grainau mit seiner Kirche vor dem gewaltigen Zugspitzmassiv."> 
+                    <div class="photo-card-content">
+                        <h3 id="album-title-zugspitze">Garmisch-Partenkirchen</h3>
+                        <p>Reise zum höchsten Punkt Deutschlands</p>
+                        <a class="button-primary"href="alben/zugspitze.html" aria-label="Album 'Zugspitze' ansehen">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="album" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M4.85714286,2 C3.28125,2 2,3.28125 2,4.85714286 L2,19.1428571 C2,20.71875 3.28125,22 4.85714286,22 L19.1428571,22 C20.71875,22 22,20.71875 22,19.1428571 L22,4.85714286 C22,3.28125 20.71875,2 19.1428571,2 L4.85714286,2 Z M7.71428571,5.57142857 C8.89732143,5.57142857 9.85714286,6.53125 9.85714286,7.71428571 C9.85714286,8.89732143 8.89732143,9.85714286 7.71428571,9.85714286 C6.53125,9.85714286 5.57142857,8.89732143 5.57142857,7.71428571 C5.57142857,6.53125 6.53125,5.57142857 7.71428571,5.57142857 Z M14.1428571,10.5714286 C14.5178571,10.5714286 14.8616071,10.7678571 15.0580357,11.0848214 L18.9866071,17.5133929 C19.1875,17.84375 19.1964286,18.2589286 19.0089286,18.5982143 C18.8214286,18.9375 18.4598214,19.1428571 18.0714286,19.1428571 L5.92857143,19.1428571 C5.53125,19.1428571 5.16071429,18.9196429 4.97767857,18.5669643 C4.79464286,18.2142857 4.82142857,17.7857143 5.04910714,17.4598214 L7.54910714,13.8883929 C7.75,13.6026786 8.07589286,13.4330357 8.42857143,13.4330357 C8.78125,13.4330357 9.10714286,13.6026786 9.30803571,13.8883929 L10.4866071,15.5758929 L13.2276786,11.0892857 C13.4241071,10.7723214 13.7678571,10.5758929 14.1428571,10.5758929 L14.1428571,10.5714286 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                            Album ansehen
+                        </a>
+                    </div>
+                </article>
 
-            <article aria-labelledby="album-title-zugspitze">
-                <img src="images/fotografie/fotografie_zugspitze_416x528.jpg" srcset="images/fotografie/fotografie_zugspitze_416x528.jpg 1x, images/fotografie/fotografie_zugspitze_416x528@2x.jpg 2x" alt="Das bayerische Alpendorf Grainau mit seiner Kirche vor dem gewaltigen Zugspitzmassiv."> 
-                <h3 id="album-title-zugspitze">Garmisch-Partenkirchen</h3>
-                <p>Reise zum höchsten Punkt Deutschlands</p>
-                <a href="alben/zugspitze.html" aria-label="Album 'Zugspitze' ansehen">Album ansehen<img src="icons/arrow-right.svg" alt=""></a>
-            </article>
+                <article class="photo-card" aria-labelledby="album-title-wien">
+                    <img src="images/fotografie/fotografie_wien_416x528.jpg" srcset="images/fotografie/fotografie_wien_416x528.jpg 1x, images/fotografie/fotografie_wien_416x528@2x.jpg 2x" alt="Eine Person wartet an einer Haltestelle in einer Wiener Straße mit Altbauten und Straßenbahnschienen."> 
+                    <div class="photo-card-content">
+                        <h3 id="album-title-wien">Wien</h3>
+                        <p>Die schöne Hauptstadt im Winter entdecken</p>
+                        <a class="button-primary"href="alben/wien.html" aria-label="Album 'Wien' ansehen">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="album" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M4.85714286,2 C3.28125,2 2,3.28125 2,4.85714286 L2,19.1428571 C2,20.71875 3.28125,22 4.85714286,22 L19.1428571,22 C20.71875,22 22,20.71875 22,19.1428571 L22,4.85714286 C22,3.28125 20.71875,2 19.1428571,2 L4.85714286,2 Z M7.71428571,5.57142857 C8.89732143,5.57142857 9.85714286,6.53125 9.85714286,7.71428571 C9.85714286,8.89732143 8.89732143,9.85714286 7.71428571,9.85714286 C6.53125,9.85714286 5.57142857,8.89732143 5.57142857,7.71428571 C5.57142857,6.53125 6.53125,5.57142857 7.71428571,5.57142857 Z M14.1428571,10.5714286 C14.5178571,10.5714286 14.8616071,10.7678571 15.0580357,11.0848214 L18.9866071,17.5133929 C19.1875,17.84375 19.1964286,18.2589286 19.0089286,18.5982143 C18.8214286,18.9375 18.4598214,19.1428571 18.0714286,19.1428571 L5.92857143,19.1428571 C5.53125,19.1428571 5.16071429,18.9196429 4.97767857,18.5669643 C4.79464286,18.2142857 4.82142857,17.7857143 5.04910714,17.4598214 L7.54910714,13.8883929 C7.75,13.6026786 8.07589286,13.4330357 8.42857143,13.4330357 C8.78125,13.4330357 9.10714286,13.6026786 9.30803571,13.8883929 L10.4866071,15.5758929 L13.2276786,11.0892857 C13.4241071,10.7723214 13.7678571,10.5758929 14.1428571,10.5758929 L14.1428571,10.5714286 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                            Album ansehen
+                        </a>
+                    </div>
+                </article>
 
-            <article aria-labelledby="album-title-wien">
-                <img src="images/fotografie/fotografie_wien_416x528.jpg" srcset="images/fotografie/fotografie_wien_416x528.jpg 1x, images/fotografie/fotografie_wien_416x528@2x.jpg 2x" alt="Eine Person wartet an einer Haltestelle in einer Wiener Straße mit Altbauten und Straßenbahnschienen."> 
-                <h3 id="album-title-wien">Wien</h3>
-                <p>Die schöne Hauptstadt im Winter entdecken</p>
-                <a href="alben/wien.html" aria-label="Album 'Wien' ansehen">Album ansehen<img src="icons/arrow-right.svg" alt=""></a>
-            </article>
+                <article class="photo-card" aria-labelledby="album-title-hamburg">
+                    <img src="images/fotografie/fotografie_hamburg_416x528.jpg" srcset="images/fotografie/fotografie_hamburg_416x528.jpg 1x, images/fotografie/fotografie_hamburg_416x528@2x.jpg 2x" alt="Die Elbphilharmonie ragt hinter den Dächern der historischen Hamburger Speicherstadt empor."> 
+                    <div class="photo-card-content">
+                        <h3 id="album-title-hamburg">Hamburg</h3>
+                        <p>Klinker und Gold im Norden</p>
+                        <a class="button-primary"href="alben/hamburg.html" aria-label="Album 'Hamburg' ansehen">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="album" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M4.85714286,2 C3.28125,2 2,3.28125 2,4.85714286 L2,19.1428571 C2,20.71875 3.28125,22 4.85714286,22 L19.1428571,22 C20.71875,22 22,20.71875 22,19.1428571 L22,4.85714286 C22,3.28125 20.71875,2 19.1428571,2 L4.85714286,2 Z M7.71428571,5.57142857 C8.89732143,5.57142857 9.85714286,6.53125 9.85714286,7.71428571 C9.85714286,8.89732143 8.89732143,9.85714286 7.71428571,9.85714286 C6.53125,9.85714286 5.57142857,8.89732143 5.57142857,7.71428571 C5.57142857,6.53125 6.53125,5.57142857 7.71428571,5.57142857 Z M14.1428571,10.5714286 C14.5178571,10.5714286 14.8616071,10.7678571 15.0580357,11.0848214 L18.9866071,17.5133929 C19.1875,17.84375 19.1964286,18.2589286 19.0089286,18.5982143 C18.8214286,18.9375 18.4598214,19.1428571 18.0714286,19.1428571 L5.92857143,19.1428571 C5.53125,19.1428571 5.16071429,18.9196429 4.97767857,18.5669643 C4.79464286,18.2142857 4.82142857,17.7857143 5.04910714,17.4598214 L7.54910714,13.8883929 C7.75,13.6026786 8.07589286,13.4330357 8.42857143,13.4330357 C8.78125,13.4330357 9.10714286,13.6026786 9.30803571,13.8883929 L10.4866071,15.5758929 L13.2276786,11.0892857 C13.4241071,10.7723214 13.7678571,10.5758929 14.1428571,10.5758929 L14.1428571,10.5714286 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                            Album ansehen
+                        </a>
+                    </div>
+                </article>
 
-            <article aria-labelledby="album-title-hamburg">
-                <img src="images/fotografie/fotografie_hamburg_416x528.jpg" srcset="images/fotografie/fotografie_hamburg_416x528.jpg 1x, images/fotografie/fotografie_hamburg_416x528@2x.jpg 2x" alt="Die Elbphilharmonie ragt hinter den Dächern der historischen Hamburger Speicherstadt empor."> 
-                <h3 id="album-title-hamburg">Hamburg</h3>
-                <p>Klinker und Gold im Norden</p>
-                <a href="alben/hamburg.html" aria-label="Album 'Hamburg' ansehen">Album ansehen<img src="icons/arrow-right.svg" alt=""></a>
-            </article>
+                <article class="photo-card" aria-labelledby="album-title-stuttgart">
+                    <img src="images/fotografie/fotografie_stuttgart416x528.jpg" srcset="images/fotografie/fotografie_stuttgart416x528.jpg 1x, images/fotografie/fotografie_stuttgart_416x528@2x.jpg 2x" alt="Eine Person mit Rucksack und Zitronen-Hemd blickt von hinten auf eine Straße in Stuttgart."> 
+                    <div class="photo-card-content">
+                        <h3 id="album-title-stuttgart">Stuttgart</h3>
+                        <p>Vom Porscheplatz zur Mercedesstraße</p>
+                        <a class="button-primary" href="alben/stuttgart.html" aria-label="Album 'Stuttgart' ansehen">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="album" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M4.85714286,2 C3.28125,2 2,3.28125 2,4.85714286 L2,19.1428571 C2,20.71875 3.28125,22 4.85714286,22 L19.1428571,22 C20.71875,22 22,20.71875 22,19.1428571 L22,4.85714286 C22,3.28125 20.71875,2 19.1428571,2 L4.85714286,2 Z M7.71428571,5.57142857 C8.89732143,5.57142857 9.85714286,6.53125 9.85714286,7.71428571 C9.85714286,8.89732143 8.89732143,9.85714286 7.71428571,9.85714286 C6.53125,9.85714286 5.57142857,8.89732143 5.57142857,7.71428571 C5.57142857,6.53125 6.53125,5.57142857 7.71428571,5.57142857 Z M14.1428571,10.5714286 C14.5178571,10.5714286 14.8616071,10.7678571 15.0580357,11.0848214 L18.9866071,17.5133929 C19.1875,17.84375 19.1964286,18.2589286 19.0089286,18.5982143 C18.8214286,18.9375 18.4598214,19.1428571 18.0714286,19.1428571 L5.92857143,19.1428571 C5.53125,19.1428571 5.16071429,18.9196429 4.97767857,18.5669643 C4.79464286,18.2142857 4.82142857,17.7857143 5.04910714,17.4598214 L7.54910714,13.8883929 C7.75,13.6026786 8.07589286,13.4330357 8.42857143,13.4330357 C8.78125,13.4330357 9.10714286,13.6026786 9.30803571,13.8883929 L10.4866071,15.5758929 L13.2276786,11.0892857 C13.4241071,10.7723214 13.7678571,10.5758929 14.1428571,10.5758929 L14.1428571,10.5714286 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                            Album ansehen
+                        </a>
+                    </div>
+                </article>
 
-            <article aria-labelledby="album-title-stuttgart">
-                <img src="images/fotografie/fotografie_stuttgart416x528.jpg" srcset="images/fotografie/fotografie_stuttgart416x528.jpg 1x, images/fotografie/fotografie_stuttgart_416x528@2x.jpg 2x" alt="Eine Person mit Rucksack und Zitronen-Hemd blickt von hinten auf eine Straße in Stuttgart."> 
-                <h3 id="album-title-stuttgart">Stuttgart</h3>
-                <p>Vom Porscheplatz zur Mercedesstraße</p>
-                <a href="alben/stuttgart.html" aria-label="Album 'Stuttgart' ansehen">Album ansehen<img src="icons/arrow-right.svg" alt=""></a>
-            </article>
+                <article class="photo-card" aria-labelledby="album-title-krk">
+                    <img src="images/fotografie/fotografie_krk_416x528.jpg" srcset="images/fotografie/fotografie_krk_416x528.jpg 1x, images/fotografie/fotografie_krk_416x528@2x.jpg 2x" alt="Ein weiter Blick auf die zahlreichen Wasserfälle und türkisen Seen im Nationalpark Plitvice."> 
+                    <div class="photo-card-content">
+                        <h3 id="album-title-krk">Kroatien</h3>
+                        <p>Krk und Nationalpark Plitvicer Seen</p>
+                        <a class="button-primary" href="alben/krk.html" aria-label="Album 'Krk und Plitvicer Seen' ansehen">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="album" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M4.85714286,2 C3.28125,2 2,3.28125 2,4.85714286 L2,19.1428571 C2,20.71875 3.28125,22 4.85714286,22 L19.1428571,22 C20.71875,22 22,20.71875 22,19.1428571 L22,4.85714286 C22,3.28125 20.71875,2 19.1428571,2 L4.85714286,2 Z M7.71428571,5.57142857 C8.89732143,5.57142857 9.85714286,6.53125 9.85714286,7.71428571 C9.85714286,8.89732143 8.89732143,9.85714286 7.71428571,9.85714286 C6.53125,9.85714286 5.57142857,8.89732143 5.57142857,7.71428571 C5.57142857,6.53125 6.53125,5.57142857 7.71428571,5.57142857 Z M14.1428571,10.5714286 C14.5178571,10.5714286 14.8616071,10.7678571 15.0580357,11.0848214 L18.9866071,17.5133929 C19.1875,17.84375 19.1964286,18.2589286 19.0089286,18.5982143 C18.8214286,18.9375 18.4598214,19.1428571 18.0714286,19.1428571 L5.92857143,19.1428571 C5.53125,19.1428571 5.16071429,18.9196429 4.97767857,18.5669643 C4.79464286,18.2142857 4.82142857,17.7857143 5.04910714,17.4598214 L7.54910714,13.8883929 C7.75,13.6026786 8.07589286,13.4330357 8.42857143,13.4330357 C8.78125,13.4330357 9.10714286,13.6026786 9.30803571,13.8883929 L10.4866071,15.5758929 L13.2276786,11.0892857 C13.4241071,10.7723214 13.7678571,10.5758929 14.1428571,10.5758929 L14.1428571,10.5714286 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                            Album ansehen
+                        </a>
+                    </div>
+                </article>
 
-            <article aria-labelledby="album-title-krk">
-                <img src="images/fotografie/fotografie_krk_416x528.jpg" srcset="images/fotografie/fotografie_krk_416x528.jpg 1x, images/fotografie/fotografie_krk_416x528@2x.jpg 2x" alt="Ein weiter Blick auf die zahlreichen Wasserfälle und türkisen Seen im Nationalpark Plitvice."> 
-                <h3 id="album-title-krk">Kroatien</h3>
-                <p>Krk und Nationalpark Plitvicer Seen</p>
-                <a href="alben/krk.html" aria-label="Album 'Krk und Plitvicer Seen' ansehen">Album ansehen<img src="icons/arrow-right.svg" alt=""></a>
-            </article>
-
-            <article aria-labelledby="album-title-suedtirol">
-                <img src="images/fotografie/fotografie_suedtirol_416x528.jpg" srcset="images/fotografie/fotografie_suedtirol_416x528.jpg 1x, images/fotografie/fotografie_suedtirol_416x528@2x.jpg 2x" alt="Zwei junge Kühe stehen auf einer Almwiese vor der Bergkulisse der Südtiroler Alpen."> 
-                <h3 id="album-title-suedtirol">Südtirol</h3>
-                <p>Wandern rund um Bozen und Meran</p>
-                <a href="alben/suedtirol.html" aria-label="Album 'Südtirol' ansehen">Album ansehen<img src="icons/arrow-right.svg" alt=""></a>
-            </article>
+                <article class="photo-card" aria-labelledby="album-title-suedtirol">
+                    <img src="images/fotografie/fotografie_suedtirol_416x528.jpg" srcset="images/fotografie/fotografie_suedtirol_416x528.jpg 1x, images/fotografie/fotografie_suedtirol_416x528@2x.jpg 2x" alt="Zwei junge Kühe stehen auf einer Almwiese vor der Bergkulisse der Südtiroler Alpen."> 
+                    <div class="photo-card-content">
+                        <h3 id="album-title-suedtirol">Südtirol</h3>
+                        <p>Wandern rund um Bozen und Meran</p>
+                        <a class="button-primary" href="alben/suedtirol.html" aria-label="Album 'Südtirol' ansehen">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="album" stroke="none" fill="none" fill-rule="nonzero">
+                                    <path d="M4.85714286,2 C3.28125,2 2,3.28125 2,4.85714286 L2,19.1428571 C2,20.71875 3.28125,22 4.85714286,22 L19.1428571,22 C20.71875,22 22,20.71875 22,19.1428571 L22,4.85714286 C22,3.28125 20.71875,2 19.1428571,2 L4.85714286,2 Z M7.71428571,5.57142857 C8.89732143,5.57142857 9.85714286,6.53125 9.85714286,7.71428571 C9.85714286,8.89732143 8.89732143,9.85714286 7.71428571,9.85714286 C6.53125,9.85714286 5.57142857,8.89732143 5.57142857,7.71428571 C5.57142857,6.53125 6.53125,5.57142857 7.71428571,5.57142857 Z M14.1428571,10.5714286 C14.5178571,10.5714286 14.8616071,10.7678571 15.0580357,11.0848214 L18.9866071,17.5133929 C19.1875,17.84375 19.1964286,18.2589286 19.0089286,18.5982143 C18.8214286,18.9375 18.4598214,19.1428571 18.0714286,19.1428571 L5.92857143,19.1428571 C5.53125,19.1428571 5.16071429,18.9196429 4.97767857,18.5669643 C4.79464286,18.2142857 4.82142857,17.7857143 5.04910714,17.4598214 L7.54910714,13.8883929 C7.75,13.6026786 8.07589286,13.4330357 8.42857143,13.4330357 C8.78125,13.4330357 9.10714286,13.6026786 9.30803571,13.8883929 L10.4866071,15.5758929 L13.2276786,11.0892857 C13.4241071,10.7723214 13.7678571,10.5758929 14.1428571,10.5758929 L14.1428571,10.5714286 Z" id="Shape" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                            Album ansehen
+                        </a>
+                    </div>
+                </article>
+            </div>
         </section>
 
     </main>
