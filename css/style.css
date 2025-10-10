@@ -81,7 +81,7 @@ h2 {
     font-weight: 700;
     font-size: 2rem;
     line-height: 1.1;
-    margin: 0;
+    margin: 2rem 0;
 }
 
 h3 {
@@ -93,6 +93,10 @@ h3 {
 
 strong {
     font-weight: 600;
+}
+
+p {
+    margin: 1rem 0;
 }
 
 
@@ -110,6 +114,7 @@ strong {
     gap: 0.5rem;
     border-radius: 100vw;
     padding: 0.75rem 1.5rem;
+    margin: 1rem 0;
 
     background-color: var(--accent-color);
     color: var(--text-color-light);
@@ -222,8 +227,8 @@ nav > a:first-child:hover {
     nav {
         font-size: 1rem;
         padding: 8px 8px 8px 32px;
-        top: 1rem;
-        margin: 0 1rem;
+        top: 16px;
+        margin: 0 16px;
     }
 
     nav a svg {
@@ -269,7 +274,7 @@ footer {
     border: 1px solid var(--contour-color);
     border-radius: 32px;
 
-    margin: 64px 0 32px 0;
+    margin: 64px 8px 32px 8px;
     padding: 32px 16px 36px 16px;
 }
 
@@ -297,8 +302,21 @@ footer a {
 
 footer a:hover {
     color: var(--accent-color);
-
 }
+
+@media (min-width: 641px) {
+    footer {
+        margin: 64px 16px 32px 16px
+    }
+}
+
+@media (min-width: 896px) {
+    footer {
+        max-width: 864px;
+        margin: 64px auto 32px;
+    }
+}
+
 
 
 /*================*/
@@ -359,3 +377,91 @@ footer a:hover {
     }
 }
 
+
+
+/*========*/
+/* LAYOUT */
+/*========*/
+
+.column-1-slim {
+    margin: 6rem auto;
+    padding: 8px;
+}
+
+@media (min-width: 641px) {
+    .column-1-slim {
+        padding: 16px;
+    }
+}
+
+@media (min-width: 896px) {
+    .column-1-slim {
+        max-width: 864px;
+        padding: 0;
+    }
+}
+
+
+.column-1-wide {
+    margin: 6rem auto;
+    padding: 8px;
+}
+
+@media (min-width: 641px) {
+    .column-1-wide {
+        padding: 16px;
+    }
+}
+
+@media (min-width: 1376px) {
+    .column-1-wide {
+        max-width: 1312px;
+        padding: 0;
+    }
+}
+
+
+
+
+
+/*===========*/
+/* FOTOALBEN */
+/*===========*/
+
+.photo-vertical {
+    max-width: 640px;
+    margin: 2rem auto;
+}
+
+.photo-horizontal {
+    max-width: 1312px;
+    margin: 2rem auto;
+}
+
+@media (min-width: 641px) {
+    .photo-vertical {
+        margin: 4rem auto;
+    }
+   
+    .photo-horizontal {
+        margin: 4rem auto;
+    }
+
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+figcaption {
+    font-family: 'font-secondary', monospace;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0.5rem auto;
+    color: var(--text-color-medium);
+    text-wrap: balance;
+}
