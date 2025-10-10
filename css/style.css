@@ -30,7 +30,7 @@
     font-family: font-secondary;
     src: url(../fonts/IBMPlexMono-MediumItalic.ttf);
     font-weight: 500;
-    font-style: normal;
+    font-style: italic;
 }
 
 
@@ -537,4 +537,6 @@ figcaption {
     margin: 0.5rem auto;
     color: var(--text-color-medium);
     text-wrap: balance;
+    font-weight: 500;
+    font-style: italic;
 }
