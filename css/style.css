@@ -369,6 +369,8 @@ footer a:hover {
     background-image: linear-gradient(to right, rgba(28, 28, 30, 0.5) 0%, rgba(17, 17, 18, 0.8) 100%);
     border: 1px solid var(--contour-color);
     border-radius: 40px;
+
+    backdrop-filter: blur(2px) brightness(90%) saturate(150%);
 }
 
 .photo-card-content h3 {
