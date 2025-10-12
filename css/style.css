@@ -33,6 +33,14 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: font-logoname;
+    src: url(../fonts/UltraSolar-Variable.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 
 /*===========*/
 /* VARIABLES */
@@ -72,10 +80,27 @@ body {
 
 h1 {
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.1;
     margin: 0;
+    padding: 0 0 2rem 0;
 }
+
+@media (min-width: 400px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+.logoname {
+    font-family: 'font-logoname', sans-serif;
+    padding: 0;
+
+    background-image: linear-gradient(45deg, var(--accent-color), var(--accent-color-shade));
+    background-clip: text;
+    color: transparent;
+}
+
 
 h2 {
     font-weight: 700;
@@ -447,6 +472,32 @@ footer a:hover {
     .banner img {
     width: 100%;
     height: 100%;
+    }
+}
+
+
+/* Banner-Layout with Text */
+
+.intro-text-media {
+    margin: -128px 0 0 0;
+    z-index: 2; 
+    position: relative; /* needed so z-index works here */
+    padding: 8px;
+    text-align: center;
+}
+
+@media (min-width: 641px) {
+    .intro-text {
+        margin: -192px 0 0 0;
+        padding: 16px;
+    }
+}
+
+@media (min-width: 896px) {
+    .intro-text {
+        margin: -192px auto 0;
+        max-width: 864px;
+        padding: 0;
     }
 }
 
