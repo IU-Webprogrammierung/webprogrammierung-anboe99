@@ -84,6 +84,7 @@ h1 {
     line-height: 1.1;
     margin: 0;
     padding: 0 0 2rem 0;
+    text-align: center;
 }
 
 @media (min-width: 400px) {
@@ -125,7 +126,18 @@ p {
 }
 
 
-/* currentColor only works with svg paths within an html file, will have to change that for some icons... */
+
+/* Text Style for Eyebrows/Sub-Headlines above or below H1 */
+
+.h1-eyebrow {
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.h1-subline {
+    text-align: center;
+    color: var(--text-color-medium);
+}
 
 
 /*=========*/
@@ -476,26 +488,44 @@ footer a:hover {
 }
 
 
-/* Banner-Layout with Text */
+/* Layout with Text and Image */
 
 .intro-text-media {
-    margin: -128px 0 0 0;
+    position: absolute;
+    top: 192px;
+    width: 100%;
+
+    z-index: 100;
+}
+
+@media (min-width: 641px) {
+    .intro-text-media {
+        top: 320px;
+    }
+}
+
+
+
+/* Layout with Text only */
+
+.intro-text {
+    margin: 128px 0 0 0;
     z-index: 2; 
     position: relative; /* needed so z-index works here */
     padding: 8px;
-    text-align: center;
+    width: 100%;
 }
 
 @media (min-width: 641px) {
     .intro-text {
-        margin: -192px 0 0 0;
+        margin: 192px 0 0 0;
         padding: 16px;
     }
 }
 
 @media (min-width: 896px) {
     .intro-text {
-        margin: -192px auto 0;
+        margin: 192px auto 0;
         max-width: 864px;
         padding: 0;
     }
@@ -508,7 +538,7 @@ footer a:hover {
 /*========*/
 
 .column-1-slim {
-    margin: 6rem auto;
+    margin: 3rem auto;
     padding: 8px;
 }
 
@@ -527,7 +557,7 @@ footer a:hover {
 
 
 .column-1-wide {
-    margin: 6rem auto;
+    margin: 3rem auto;
     padding: 8px;
 }
 
