@@ -312,6 +312,7 @@ nav .menu-active {
 nav > a:first-child {
     color: var(--text-color-light);
     transition: all 0.2s ease;
+    height: 16px;
 }
 
 nav > a:first-child:hover {
@@ -357,7 +358,7 @@ nav > a:first-child:hover {
     }   
 
     nav > a:first-child {
-        width: 128px;
+        height: 20px;
     }
 
 }
