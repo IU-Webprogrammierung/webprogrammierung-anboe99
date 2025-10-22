@@ -685,3 +685,27 @@ figcaption {
     font-weight: 500;
     font-style: italic;
 }
+
+
+/*=====================*/
+/* ADDITIONAL ELEMENTS */
+/*=====================*/
+
+.profilepic {
+    display: block;
+    margin: 0 auto 32px;
+
+    width: 128px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: var(--contour-color);
+}
+
+@media (min-width: 641px) {
+    .profilepic {
+        width: 192px;
+    }
+}
