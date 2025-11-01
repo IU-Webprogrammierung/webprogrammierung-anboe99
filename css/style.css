@@ -58,6 +58,8 @@
     --accent-color-shade: #E61C44;
 }
 
+/* Decided AGAINST light mode because the smooth effect from images to background looks to dreamy on light mode. Focused on great dark mode design instead. */
+
 
 /*========*/
 /* STYLES */
