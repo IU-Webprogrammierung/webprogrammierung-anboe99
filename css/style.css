@@ -641,8 +641,15 @@ footer a:hover {
     padding: 32px;
 
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.link-card-text {
+    flex: 1;
+}
 
 
 /*===========*/
