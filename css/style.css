@@ -54,8 +54,8 @@
     --text-color-dark: #1C1C1E;
     --text-color-light: #FFFFFF;
     --text-color-medium: #8E8E93;
-    --accent-color: #FF375F;
-    --accent-color-shade: #E61C44;
+    --accent-color: #EA0057;
+    --accent-color-shade: #FF005E;
 }
 
 /* Decided AGAINST light mode because the smooth effect from images to background looks to dreamy on light mode. Focused on great dark mode design instead. */
