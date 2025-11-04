@@ -328,8 +328,8 @@ nav .menu-active:hover {
 
 nav > a:first-child {
     transition: all 0.2s ease;
-    width: 63px;
-    height: 24px;
+    width: 55px;
+    height: 20px;
 }
 
 
@@ -345,6 +345,12 @@ nav > a:first-child {
     nav ul li a {
         width: 72px;
     }
+
+    nav > a:first-child {
+    transition: all 0.2s ease;
+    width: 66px;
+    height: 24px;
+}
 }
 
 
@@ -367,7 +373,7 @@ nav > a:first-child {
     }   
 
     nav > a:first-child {
-        width: 84px;
+        width: 88px;
         height: 32px;
     }
 

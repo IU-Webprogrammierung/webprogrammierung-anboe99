@@ -1,16 +1,18 @@
 # Portfolio Website von Andreas Böhm
 IU Projekt Webprogrammierung – DLBUXPWP01
 
-## Konzept
-**Die Portfolio-Website vereint meine Arbeit als UX-Designer mit meiner Leidenschaft für die Fotografie.**
-Inhaltlich gliedert sich die Seite in die drei Kernbereiche UX-Design (Projekt-Einblicke), Fotografie (thematische Alben) und eine persönliche "Über mich"-Seite mit integrierter Kontaktmöglichkeit.
+## 💡 Konzept
+> **Die Portfolio-Website vereint meine Arbeit als UX-Designer mit meiner Leidenschaft für die Fotografie.**
+
+Inhaltlich gliedert sich die Seite in die drei Kernbereiche **UX-Design (Projekt-Einblicke), Fotografie (thematische Alben) und eine persönliche "Über mich"-Seite** mit integrierter Kontaktmöglichkeit.
 Eine duale Nutzerführung via Hauptnavigation und Teasern auf der Startseite ermöglicht sowohl den direkten, zielgerichteten Zugriff als auch ein exploratives Entdecken der Inhalte.
 
-### Navigationsstruktur
+### 🖥️ Navigationsstruktur
 ```
 / Startseite
 ├── User Experience Design
 ├── Fotografie
+│   ├── Los Angeles
 │   ├── Berlin
 │   ├── Emilia-Romagna
 │   ├── Zugspitze
@@ -25,12 +27,24 @@ Eine duale Nutzerführung via Hauptnavigation und Teasern auf der Startseite erm
     └── Datenschutz
 ```
 
-### Inhalte
+### 🏞️ Inhalte
 - UX-Projekte werden in einer Liste aufgezeigt. Sie verfügen über externe Links zum jeweiligen Produkt.
 - Fotografie-Alben erhalten jeweils eine Unterseite mit allen Bildern und einer kurzen Beschreibung.
 
-## Technologien
-- Bisher HTML
+## 🔧 Technologien
+- HTML
+- CSS
 
-## Besonderheiten
-Readme wird im Laufe der 3 Projektphasen vervollständigt.
+## ✅ Eigenschaften und Besonderheiten
+- Mobile-first Design, bei dem sich Elemente nach verfügbarem Platz auf größeren Bildschirmen anpassen (keine fixierten Breakpoints)
+- Händisch geschriebener, semantisch passender HTML Code 
+- Händisch geschriebenes, geschachteltes CSS
+- Alle Abschnitte und Elemente haben aussagekräftige ARIA-Labels (z. B. "Album 'Berlin' öffnen")
+- Bilder haben aussagekräftige Beschreibungstexte
+- Website ist vollständig mit der Tastatur bedienbar
+- Durchgängige Designsprache mit Glaselementen und ineinander stimmigen Rundungen
+- Ausgabe verschiedener Bildformate und -größen für unterschiedliche Bildschirmgrößen und Auflösungen
+
+### ℹ️ Hinweise
+- Auf einen Light Mode wurde verzichtet, da die Darstellung mit auslaufenden Bildern nicht gut aussah
+- Readme wird im Laufe der 3 Projektphasen vervollständigt.
