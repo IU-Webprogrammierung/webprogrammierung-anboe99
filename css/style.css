@@ -57,8 +57,8 @@
     --text-color-dark: #1C1C1E;
     --text-color-light: #FFFFFF;
     --text-color-medium: #8E8E93;
-    --accent-color: #EA0057;
-    --accent-color-shade: #FF005E;
+    --accent-color: #FEBC2E;
+    --accent-color-shade: #28C840;
 }
 
 /* Decided AGAINST light mode because the smooth effect from images to background looks to dreamy on light mode. Focused on great dark mode design instead. */
@@ -102,10 +102,7 @@ h1 {
 .logoname {
     font-family: 'font-primary', sans-serif;
     padding: 0;
-
-    background-image: linear-gradient(45deg, var(--accent-color), var(--accent-color-shade));
-    background-clip: text;
-    color: transparent;
+    color: var(--accent-color);
 }
 
 
@@ -183,7 +180,7 @@ p {
     margin: 1rem 0;
 
     background-color: var(--accent-color);
-    color: var(--text-color-light);
+    color: var(--text-color-dark);
     font-weight: 600;
     text-decoration: none;
     border: none;
@@ -270,7 +267,7 @@ nav {
     border: 1px solid var(--contour-color);
     border-radius: 100vw;
 
-    padding: 8px 8px 8px 16px;
+    padding: 8px 8px 8px 24px;
     margin: 0 0.5rem;
     top: 0.5rem;
 
@@ -320,19 +317,20 @@ nav ul li a:hover {
 
 nav .menu-active {
     background-color: var(--accent-color);
-    color: var(--text-color-light);
+    color: var(--text-color-dark);
+}
+
+nav .menu-active:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color-dark);
 }
 
 
 nav > a:first-child {
-    color: var(--text-color-light);
     transition: all 0.2s ease;
-    height: 16px;
+    height: 24px;
 }
 
-nav > a:first-child:hover {
-    color: var(--accent-color);
-}
 
 @media (min-width: 400px) {
     nav {
@@ -357,11 +355,6 @@ nav > a:first-child:hover {
         margin: 0 16px;
     }
 
-    nav a svg {
-        width: 76px;
-        height: 20px;
-    }
-
     nav ul li a {
         gap: 8px;
         width: 128px;
@@ -373,7 +366,7 @@ nav > a:first-child:hover {
     }   
 
     nav > a:first-child {
-        height: 20px;
+        height: 32px;
     }
 
 }
