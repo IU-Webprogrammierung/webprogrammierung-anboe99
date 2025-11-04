@@ -1,4 +1,4 @@
-/* Only rudimentary CSS for the first project phase */
+/* This CSS is written in nested format, which is support by almost all modern browsers (> 90 %). */
 
 
 /*=======*/
@@ -33,16 +33,6 @@
     font-style: italic;
 }
 
-/*
-    Removed this font from the homepage.
-
-    @font-face {
-        font-family: font-logoname;
-        src: url(../fonts/UltraSolar-Variable.ttf);
-        font-weight: 400;
-        font-style: normal;
-    }
-*/
 
 
 /*===========*/
@@ -64,6 +54,7 @@
 /* Decided AGAINST light mode because the smooth effect from images to background looks to dreamy on light mode. Focused on great dark mode design instead. */
 
 
+
 /*========*/
 /* STYLES */
 /*========*/
@@ -74,9 +65,9 @@ body {
     line-height: 1.5;
     background-color: var(--primary-color);
     color: var(--text-color-light);
-
     margin: 0;
 }
+
 
 
 /*============ */
@@ -91,20 +82,17 @@ h1 {
     padding: 0 0 2rem 0;
     text-align: center;
     hyphens: auto;
-}
 
-@media (min-width: 400px) {
-    h1 {
+    @media (min-width: 400px) {
         font-size: 4rem;
     }
 }
 
 .logoname {
-    font-family: 'font-primary', sans-serif;
+    /* Yellow name without padding on homepage */
     padding: 0;
     color: var(--accent-color);
 }
-
 
 h2 {
     font-weight: 700;
@@ -130,20 +118,17 @@ p {
 
 
 
-/* Text Style for Eyebrows/Sub-Headlines above or below H1 */
+/* Text Styles for Eyebrows/Sub-Headlines above or below H1 */
 
 .h1-eyebrow {
     text-align: center;
     color: var(--accent-color);
     background: rgba(17, 17, 18, 0.2);
-
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-
     border-radius: 100vw;
     padding: 0rem 0.75rem;
-
     backdrop-filter: blur(8px) brightness(90%) saturate(150%);
 }
 
@@ -159,11 +144,12 @@ p {
 }
 
 
-/* Some H2 are centered */
+/* Some headlines are centered */
 
 .centered {
     text-align: center;
 }
+
 
 
 /*=========*/
@@ -178,23 +164,19 @@ p {
     border-radius: 100vw;
     padding: 0.75rem 1.5rem;
     margin: 1rem 0;
-
     background-color: var(--accent-color);
     color: var(--text-color-dark);
     font-weight: 600;
     text-decoration: none;
     border: none;
     cursor: pointer;
-
     transition: all 0.2s ease-in-out;
-
     line-height: 1;
-}
 
-.button-primary:hover {
-    background-color: var(--accent-color-shade);
+    &:hover {
+        background-color: var(--accent-color-shade);
+    }
 }
-
 
 .button-back {
     display: inline-flex;
@@ -204,53 +186,43 @@ p {
     border-radius: 100vw;
     padding: 0.25rem 0.5rem;
     margin: 0;
-
     background-image: linear-gradient(to left, rgba(28, 28, 30, 0.5) 0%, rgba(17, 17, 18, 0.6) 100%);
     border: 1px solid var(--contour-color);
     border-radius: 100vw;
-
     backdrop-filter: blur(8px) brightness(90%) saturate(150%);
-
     color: var(--text-color-medium);
-
     font-size: 0.75rem;
     font-weight: 400;
     text-decoration: none;
     cursor: pointer;
-
     transition: all 0.2s ease-in-out;
-
     line-height: 1;
-
     position: fixed;
     top: 78px;
     left: 8px;
     z-index: 998;
-}
 
-.button-back:hover {
-    color: var(--text-color-light);
-}
+    &:hover {
+        color: var(--text-color-light);
+    }
 
-@media (min-width: 400px) {
-    .button-back {
+    /* Positioning for different screen sizes */
+
+    @media (min-width: 400px) {
         top: 84px;
     }
-}
 
-@media (min-width: 641px) {
-    .button-back {
+    @media (min-width: 641px) {
         top: 114px;
         left: 16px;
     }
-}
 
-@media (min-width: 1152px) {
-    .button-back {
+    @media (min-width: 1152px) {
         top: 46px;
         left: 16px;
-    }
+    } 
 }
+
 
 
 /*============*/
@@ -262,128 +234,133 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background-image: linear-gradient(to right, rgba(28, 28, 30, 0.5) 0%, rgba(17, 17, 18, 0.8) 100%);
     border: 1px solid var(--contour-color);
     border-radius: 100vw;
-
     padding: 8px 8px 8px 24px;
     margin: 0 0.5rem;
     top: 0.5rem;
-
     font-size: 0.5rem;
     font-weight: 600;
-
     backdrop-filter: blur(8px) brightness(90%) saturate(150%);
-
     position: fixed;
     left: 0;
     right: 0;
     z-index: 999;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav ul li + li {
-    margin-left: -0.5rem;
-}
-
-nav ul li a {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 4px;
-    width: 56px;
-
-    padding: 0.25rem 0.5rem;
-    text-decoration: none;
-    color: var(--text-color-medium);
-    transition: all 0.2s ease;
-
-    border-radius: 100vw;
-}
-
-nav ul li a:hover {
-    color: var(--text-color-light);
-}
-
-nav .menu-active {
-    background-color: var(--accent-color);
-    color: var(--text-color-dark);
-}
-
-nav .menu-active:hover {
-    background-color: var(--accent-color);
-    color: var(--text-color-dark);
-}
 
 
-nav > a:first-child {
-    transition: all 0.2s ease;
-    width: 55px;
-    height: 20px;
-}
+    /* Resizing Menu Bar */
 
-
-@media (min-width: 400px) {
-    nav {
+    @media (min-width: 400px) {
         font-size: 0.75rem;
     }
 
-    nav ul li + li {
-        margin-left: 0;
-    }
-
-    nav ul li a {
-        width: 72px;
-    }
-
-    nav > a:first-child {
-    transition: all 0.2s ease;
-    width: 66px;
-    height: 24px;
-}
-}
-
-
-@media (min-width: 641px) {
-    nav {
+    @media (min-width: 641px) {
         font-size: 1rem;
         padding: 8px 8px 8px 32px;
         top: 16px;
         margin: 0 16px;
     }
 
-    nav ul li a {
-        gap: 8px;
-        width: 128px;
-    }
-
-    nav ul li a svg {
-        width: 24px;
-        height: 24px;
-    }   
-
-    nav > a:first-child {
-        width: 88px;
-        height: 32px;
-    }
-
-}
-
-@media (min-width: 928px) {
-    nav {
+    @media (min-width: 928px) {
         max-width: 864px;
         margin: 0 auto;
     }
+
+
+    /* Substyles */
+
+    & ul {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+        & li {
+            & + li {
+                margin-left: -0.5rem;
+
+                @media (min-width: 400px) {
+                    margin-left: 0rem;
+                }
+            }
+
+            & a {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 4px;
+                width: 56px;
+                padding: 0.25rem 0.5rem;
+                text-decoration: none;
+                color: var(--text-color-medium);
+                transition: all 0.2s ease;
+                border-radius: 100vw;
+
+
+                /* Resizing */
+
+                &:hover {
+                    color: var(--text-color-light);
+                }
+
+                @media (min-width: 400px) {
+                    width: 72px;
+                }
+
+                @media (min-width: 641px) {
+                    gap: 8px;
+                    width: 128px;
+                }          
+
+
+                /* Icon Size on larger screens */
+
+                & svg {
+                    width: 20px;
+                    height: 20px;
+
+                    @media (min-width: 641px) {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    & .menu-active {
+        background-color: var(--accent-color);
+        color: var(--text-color-dark);       
+
+        &:hover {
+            background-color: var(--accent-color);
+            color: var(--text-color-dark);
+        }
+    }
+
+
+    /* Logo styling */
+
+    & > a:first-child {
+        transition: all 0.2s ease;
+        width: 55px;
+        height: 20px;
+
+        @media (min-width: 400px) {
+            width: 66px;
+            height: 24px;
+        }
+
+        @media (min-width: 641px) {
+            width: 88px;
+            height: 32px;
+        }
+    }   
 }
 
 
