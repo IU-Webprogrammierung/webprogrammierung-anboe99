@@ -379,7 +379,7 @@ nav > a:first-child {
 
 }
 
-@media (min-width: 896px) {
+@media (min-width: 928px) {
     nav {
         max-width: 864px;
         margin: 0 auto;
