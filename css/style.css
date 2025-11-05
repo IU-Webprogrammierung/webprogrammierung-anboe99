@@ -550,7 +550,7 @@ footer {
     padding-top: 192px;
     padding-bottom: 32px;
 
-    @media (min-width: 641 px) {
+    @media (min-width: 641px) {
         padding-top: 256px;
         padding-bottom: 96px;        
     }
