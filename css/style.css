@@ -328,7 +328,6 @@ nav {
                         height: 24px;
                     }
                 }
-
             }
         }
     }
@@ -373,56 +372,61 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     background-image: linear-gradient(to bottom, var(--elevated-color) 0%, var(--elevated-color-shade) 100%);
     border: 1px solid var(--contour-color);
     border-radius: 48px;
-
     margin: 64px 8px 32px 8px;
     padding: 32px 16px 36px 16px;
-}
 
-footer ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 1rem 0;
-}
 
-footer ul:first-child li {
-    margin: 0 0.5rem;
-}
+    & ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 1rem 0;
 
-footer ul:last-child li {
-    margin: 0 1rem;
-}
+        /* Smaller distance for icons */
 
-footer a {
-    color: var(--text-color-medium);
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-}
+        &:first-child {
+            & li {
+                margin: 0 0.5rem;
+            }
+        }
 
-footer a:hover {
-    color: var(--accent-color);
-}
+        /* Larger distance for text */
 
-@media (min-width: 641px) {
-    footer {
-        margin: 64px 16px 32px 16px
+        &:last-child {
+            & li {
+                margin: 0 1rem;
+            }
+        }
+
     }
-}
 
-@media (min-width: 896px) {
-    footer {
+
+    & a {
+        color: var(--text-color-medium);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.2s ease-in-out;    
+
+        &:hover {
+            color: var(--accent-color); 
+        }
+    }
+
+
+    /* Resizing */
+
+    @media (min-width: 641px) {
+        margin: 64px 16px 32px 16px;
+    }
+
+    @media (min-width: 928px) {
         max-width: 864px;
         margin: 64px auto 32px;
     }
 }
-
-
-
 
 
 
@@ -435,64 +439,56 @@ footer a:hover {
     border-radius: 48px;
     overflow: hidden;
     display: inline-block;
+
+    & img {
+        display: block;  
+        width: 100%;
+        height: auto; 
+    }
 }
 
-.photo-card img {
-    display: block;  
-    width: 100%;
-    height: auto;
-}
 
 .photo-card-content {
     position: absolute;
     bottom: 8px;
     left: 8px;
     right: 8px;
-
     padding: 24px 16px 16px 16px;
-
     background-image: linear-gradient(to right, rgba(28, 28, 30, 0.5) 0%, rgba(17, 17, 18, 0.8) 100%);
     border: 1px solid var(--contour-color);
     border-radius: 40px;
-
     backdrop-filter: blur(2px) brightness(90%) saturate(150%);
+
+    /* Adjusted font styling within photo cards */
+
+    & h3 {
+        padding: 0;
+        text-align: center;
+        text-wrap: balance;        
+    }
+
+    & p {
+        margin: 0.5rem 0 1.5rem 0;
+        text-align: center;
+        text-wrap: balance;        
+    }
+
+    & a {
+        margin: 0;
+        display: flex; 
+    }
 }
 
-.photo-card-content h3 {
-    padding: 0;
-    text-align: center;
-    text-wrap: balance;
-}
-
-.photo-card-content p {
-    margin: 0.5rem 0 1.5rem 0;
-    text-align: center;
-    text-wrap: balance;
-}
-
-
-.photo-card-content a {
-    margin: 0;
-    display: flex;
-}
-
-
-/*=======================*/
-/* GRID FOR PHOTO CARDS */
-/*=======================*/
 
 .photo-card-wall {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(344px, 1fr));
     gap: 1rem;
-}
 
-@media (min-width: 1152px) {
-    .photo-card-wall {
+    @media (min-width: 1152px) {
         gap: 2rem;
     }
 }
-
 
 
 
@@ -505,68 +501,69 @@ footer a:hover {
 .banner {
     position: relative;
     line-height: 0;
+
+    & picture {
+        position: absolute;
+        z-index: -1; /* below content */  
+        
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent 0%, var(--primary-color) 100%);             
+        }
+
+        @media (min-width: 641px) {
+            height: 752px;
+            overflow: hidden;
+            width: 100%;            
+        }
+    }
+
+    & img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        
+        @media (min-width: 641px) {
+            width: 100%;
+            height: 100%;            
+        }
+    }
 }
 
-.banner picture {
-    position: absolute;
-    z-index: -1; /* below content */
-}
 
-.banner img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.banner picture::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, transparent 0%, var(--primary-color) 100%); 
-}
+/* Banner content positioning */
 
 .intro-text {
     padding-top: 192px;
+
+    @media (min-width: 641px) {
+        padding-top: 256px;        
+    }
 }
 
 .intro-logo {
     padding-top: 192px;
     padding-bottom: 32px;
+
+    @media (min-width: 641 px) {
+        padding-top: 256px;
+        padding-bottom: 96px;        
+    }
 }
 
 .intro-album {
     padding-top: 256px;
-}
 
-
-@media (min-width: 641px) {
-    .banner picture {
-        height: 752px;
-        overflow: hidden;
-        width: 100%;
-    }
-
-    .banner img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .intro-text {
-        padding-top: 256px;
-    }
-
-    .intro-logo {
-        padding-top: 256px;
-        padding-bottom: 96px;
-    }
-
-    .intro-album {
-        padding-top: 384px;
+    @media (min-width: 641px) {
+        padding-top: 384px;        
     }
 }
+
 
 
 /*========*/
@@ -576,16 +573,12 @@ footer a:hover {
 .column-1-slim {
     margin: 5rem auto;
     padding: 8px;
-}
 
-@media (min-width: 641px) {
-    .column-1-slim {
+    @media (min-width: 641px) {
         padding: 16px;
     }
-}
 
-@media (min-width: 896px) {
-    .column-1-slim {
+    @media (min-width: 896px) {
         max-width: 864px;
         padding: 0;
     }
@@ -595,16 +588,12 @@ footer a:hover {
 .column-1-wide {
     margin: 6rem auto;
     padding: 8px;
-}
 
-@media (min-width: 641px) {
-    .column-1-wide {
+    @media (min-width: 641px) {
         padding: 16px;
     }
-}
 
-@media (min-width: 1376px) {
-    .column-1-wide {
+    @media (min-width: 1376px) {
         max-width: 1312px;
         padding: 0;
     }
@@ -628,11 +617,8 @@ footer a:hover {
     background-image: linear-gradient(to bottom, var(--elevated-color) 0%, var(--elevated-color-shade) 100%);
     border: 1px solid var(--contour-color);
     border-radius: 48px;
-
     padding: 32px;
-
     text-align: center;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -643,30 +629,28 @@ footer a:hover {
 }
 
 
-/*===========*/
-/* FOTOALBEN */
-/*===========*/
+/*========*/
+/* ALBUMS */
+/*========*/
 
 .photo-vertical {
     max-width: 640px;
     margin: 2rem auto;
+
+    @media (min-width: 641px) {
+        margin: 4rem auto;
+    }
 }
 
 .photo-horizontal {
     max-width: 1312px;
     margin: 2rem auto;
+
+    @media (min-width: 641px) {
+        margin: 4rem auto;
+    }    
 }
 
-@media (min-width: 641px) {
-    .photo-vertical {
-        margin: 4rem auto;
-    }
-   
-    .photo-horizontal {
-        margin: 4rem auto;
-    }
-
-}
 
 figure img {
     width: 100%;
@@ -688,6 +672,7 @@ figcaption {
 }
 
 
+
 /*=====================*/
 /* ADDITIONAL ELEMENTS */
 /*=====================*/
@@ -695,18 +680,14 @@ figcaption {
 .profilepic {
     display: block;
     margin: 0 auto 32px;
-
     width: 128px;
     aspect-ratio: 1/1;
     object-fit: cover;
-
     border-radius: 50%;
     border: 1px solid;
     border-color: var(--contour-color);
-}
 
-@media (min-width: 641px) {
-    .profilepic {
+    @media (min-width: 641px) {
         width: 192px;
     }
 }
