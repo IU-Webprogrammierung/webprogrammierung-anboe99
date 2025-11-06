@@ -602,8 +602,11 @@ footer {
 
 .columns-2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
     gap: 1rem;
+
+    @media (min-width: 641px) {
+        grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
+    }
 }
 
 
