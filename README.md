@@ -34,16 +34,18 @@ Eine duale Nutzerführung via Hauptnavigation und Teasern auf der Startseite erm
 ## 🔧 Technologien
 - HTML
 - CSS
+- JS
 
 ## ✅ Eigenschaften und Besonderheiten
 - Mobile-first Design, bei dem sich Elemente nach verfügbarem Platz auf größeren Bildschirmen anpassen (keine fixierten Breakpoints)
 - Händisch geschriebener, semantisch passender HTML Code 
 - Händisch geschriebenes, geschachteltes CSS
+- JavaScript für subtile Eingangsanimationen (befolgen Präferenzen für Nutzende mit Einstellungen für reduzierte Bewegungen)
 - Alle Abschnitte und Elemente haben aussagekräftige ARIA-Labels (z. B. "Album 'Berlin' öffnen")
 - Bilder haben aussagekräftige Beschreibungstexte
 - Website ist vollständig mit der Tastatur bedienbar
 - Durchgängige Designsprache mit Glaselementen und ineinander stimmigen Rundungen
-- Ausgabe verschiedener Bildformate und -größen für unterschiedliche Bildschirmgrößen und Auflösungen
+- Weboptimierte Ausgabe verschiedener Bildformate und -größen für unterschiedliche Bildschirmgrößen und Auflösungen
 
 ### ℹ️ Hinweise
 - Auf einen Light Mode wurde verzichtet, da die Darstellung mit auslaufenden Bildern nicht gut aussah
