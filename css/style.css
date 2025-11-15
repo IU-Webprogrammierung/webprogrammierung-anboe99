@@ -175,9 +175,12 @@ p {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     line-height: 1;
+    box-shadow: 0 0px 16px rgba(254, 188, 46, 0);
+    transition: box-shadow 0.3 ease-in-out;
 
     &:hover {
         background-color: var(--accent-color-shade);
+        box-shadow: 0 4px 16px rgba(40, 200, 64, 0.2);
     }
 }
 
@@ -695,5 +698,24 @@ figcaption {
 
     @media (min-width: 641px) {
         width: 192px;
+    }
+}
+
+
+
+/*============*/
+/* ANIMATIONS */
+/*============*/
+
+@media (prefers-reduced-motion: no-preference) {
+    .fade-in-on-scroll {
+        opacity: 0;
+        transform: translateY(32px);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+    .is-visible {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
