@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>arrow-left</title>
-    <g id="arrow-left" stroke="none" fill="none" fill-rule="nonzero">
-        <path d="M14.225,8.425 C14.46,8.19 14.46,7.81 14.225,7.5775 L10.025,3.375 C9.79,3.14 9.41,3.14 9.1775,3.375 C8.945,3.61 8.9425,3.99 9.1775,4.2225 L12.3525,7.3975 L2.2,7.3975 C1.8675,7.3975 1.6,7.665 1.6,7.9975 C1.6,8.33 1.8675,8.5975 2.2,8.5975 L12.3525,8.5975 L9.1775,11.7725 C8.9425,12.0075 8.9425,12.3875 9.1775,12.62 C9.4125,12.8525 9.7925,12.855 10.025,12.62 L14.225,8.425 Z" id="Path" fill="currentColor" transform="translate(8.0006, 7.997) scale(-1, 1) translate(-8.0006, -7.997)"></path>
-    </g>
-</svg>
