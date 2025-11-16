@@ -686,11 +686,13 @@ footer {
 }
 
 
-figure img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 16px;
+figure {
+    & img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 16px;
+    }
 }
 
 figcaption {
