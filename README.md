@@ -41,15 +41,15 @@ Eine duale Nutzerführung via Hauptnavigation und Teasern auf der Startseite erm
 - JS
 
 ## ✅ Eigenschaften und Besonderheiten
-- Mobile-first Design, bei dem sich Elemente nach verfügbarem Platz auf größeren Bildschirmen anpassen (keine fixierten Breakpoints)
+- Mobile-first Design, bei dem sich Elemente nach verfügbarem Platz auf größeren Bildschirmen anpassen
 - Händisch geschriebener, semantisch passender HTML Code 
-- Händisch geschriebenes, geschachteltes CSS
-- JavaScript für subtile Eingangsanimationen (befolgen Präferenzen für Nutzende mit Einstellungen für reduzierte Bewegungen) und Hover-Effekte
+- Händisch geschriebenes, geschachteltes CSS mit Variablen für Farben
+- JavaScript und CSS für subtile Eingangsanimationen (befolgen Präferenzen für Nutzende mit Einstellungen für reduzierte Bewegungen) und Hover-Effekte
 - Alle Abschnitte und Elemente haben aussagekräftige ARIA-Labels (z. B. "Album 'Berlin' öffnen")
 - Bilder haben aussagekräftige Beschreibungstexte
 - Website ist vollständig mit der Tastatur bedienbar
 - Durchgängige Designsprache mit Glaselementen und ineinander stimmigen Rundungen
-- Erstellung eines Logos und darauf abgestimmten Farbkonzepts für die Website
+- Erstellung eines Logos und darauf abgestimmten, kontrastreichen Farbkonzepts für die Website inklusive Favicon
 - Weboptimierte Ausgabe verschiedener Bildformate und -größen für unterschiedliche Bildschirmgrößen und Auflösungen
 - Google Lighthouse bewertet die einzelnen Unterseitenn mit 90-100 Punkten bei Performance, Accessibility, Best Practices und SEO
 - Regelmäßige Commits bei neuen Funktionen und Projektfortschritt in das bereitgestellte Repository
