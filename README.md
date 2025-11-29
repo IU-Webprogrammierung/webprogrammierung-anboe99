@@ -54,7 +54,7 @@ Eine duale Nutzerführung via Hauptnavigation und Teasern auf der Startseite erm
 - Google Lighthouse bewertet die einzelnen Unterseitenn mit 90-100 Punkten bei Performance, Accessibility, Best Practices und SEO
 - Regelmäßige Commits bei neuen Funktionen und Projektfortschritt in das bereitgestellte Repository
 
-### ℹ️ Hinweise
+## ℹ️ Hinweise
 - Die Website wurde mit folgenden Geräten und Browsern getestet:
     - Mac: Safari, Chrome auf macOS 26.1
     - iPad: Safari auf iPadOS 26.1
